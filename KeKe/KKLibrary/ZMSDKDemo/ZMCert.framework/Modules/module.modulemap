@@ -1,0 +1,6 @@
+framework module ZMCert {
+  umbrella header "ZMCert.h"
+
+  export *
+  module * { export * }
+}
