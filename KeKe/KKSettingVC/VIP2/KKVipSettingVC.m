@@ -233,16 +233,21 @@
     }
     return nil;
 }
--(void)setUI{
 
-}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)createNewPublish{
 
 
+}
+-(void)cretaeNewPrivateFile{
 
+}
+-(void)createNewDown{
+
+}
 /*
 #pragma mark - Navigation
 
