@@ -21,8 +21,10 @@
 -(void)createUI{
     
     for (int index = 0; index < 12;index ++) {
+        
         NSInteger type = index % 6;
         NSInteger page = index / 2;
+        
         self.button =[UIButton buttonWithType: UIButtonTypeCustom];
         self.button.frame = CGRectMake(15 + type *(self.frame.size.width- 30 -(19* 5)), 15 + 25  * page,90, self.frame.size.height-20);
         [self.button setTitle:[NSString stringWithFormat:@"%d",index] forState:UIControlStateNormal];

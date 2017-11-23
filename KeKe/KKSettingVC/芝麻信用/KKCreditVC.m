@@ -46,7 +46,6 @@
         NSLog(@"binding..");
         
     };
-    
 }
 -(void)backBarButtonPressed:(id)sender{
     [self.navigationController popViewControllerAnimated:YES];

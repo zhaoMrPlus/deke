@@ -36,7 +36,6 @@
     [self addSubview:self.KKDownBtn];
     [self addSubview:self.KKTextfield];
 
-    
 }
 -(void)layoutSubviews{
     

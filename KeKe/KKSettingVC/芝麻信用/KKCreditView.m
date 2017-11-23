@@ -31,7 +31,6 @@
     [self.downButton.titleLabel setFont:[UIFont fontWithName:@"PingFangSC-Light" size:13]];
     [self.downButton addTarget:self action:@selector(bindingClick) forControlEvents:UIControlEventTouchUpInside];
     
-    
     [self addSubview:self.iconImage];
     [self addSubview:self.titleLabel];
     [self addSubview:self.downButton];

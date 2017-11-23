@@ -52,6 +52,7 @@
                                 self.width - _titleLabel.width,
                                 .5);
 }
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code

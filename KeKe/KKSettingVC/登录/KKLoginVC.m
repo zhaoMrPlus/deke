@@ -77,7 +77,6 @@
         _KKuserName.textColor=UIColorFromRGB(0x2bdcff);
         _KKuserName.tintColor=UIColorFromRGB(0x2bdcff);
 
-        
     }
     
     //倒计时按钮
