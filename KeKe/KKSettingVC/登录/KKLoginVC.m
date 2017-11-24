@@ -78,7 +78,6 @@
         _KKuserName.tintColor=UIColorFromRGB(0x2bdcff);
 
     }
-    
     //倒计时按钮
     _countDownForBtn = [[CountDown alloc] init];
     /*

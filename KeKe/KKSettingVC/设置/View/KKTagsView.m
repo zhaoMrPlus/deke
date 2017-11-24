@@ -32,7 +32,6 @@
     [self.KKDownBtn addTarget:self action:@selector(ClickDown) forControlEvents:UIControlEventTouchUpInside];
     [self.KKDownBtn.titleLabel setFont:[UIFont fontWithName:@"PingFangSC-Light" size:13]];
 
-    
     [self addSubview:self.KKDownBtn];
     [self addSubview:self.KKTextfield];
 

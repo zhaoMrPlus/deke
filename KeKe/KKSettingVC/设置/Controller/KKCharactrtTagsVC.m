@@ -24,9 +24,8 @@
     [self getData];
     [self setTitle:@"个性标签"];
     [self showBackButtonWithImage:@"icon_back"];
-    [self showRightButtonWithTitle:@"提交" titleColor:[UIColor blackColor]];
+    [self showRightButtonWithTitle:@"确认" titleColor:[UIColor blackColor]];
     [self.view setBackgroundColor:[UIColor mainGrayColor]];
-    
 }
 -(void)stepUI{
     KKTagsView * kktag =[[KKTagsView alloc] initWithFrame:CGRectMake(0, 64 + 5, self.view.frame.size.width, 50)];
@@ -36,8 +35,14 @@
        setbuttonBackground:UIColorFromRGB(0x2bdcff)
                 titleColor:[UIColor whiteColor]
                buttonTitle:@"提交"];
+    UILabel *tipLabel=[[UILabel alloc] initWithFrame:CGRectMake(15 , kktag.bottom +(44-20)/2, 100, 20)];
+    [self.view addSubview:tipLabel];   
+    [tipLabel setText:@"请选择标签"];
+    [tipLabel setTextAlignment:NSTextAlignmentLeft];
+    [tipLabel setFont:[UIFont fontWithName:@"PingFangSC-Light" size:15]];
+    
     KKTipsView *tips = [[KKTipsView alloc] initWithFrame:CGRectMake(0, kktag.bottom + 44 , self.view.frame.size.width, self.view.frame.size.height- 5 - 50 - 44)];
-    tips.backgroundColor=[UIColor redColor];
+    tips.backgroundColor=[UIColor whiteColor];
     [self.view addSubview:tips];
 }
 -(void)getData{

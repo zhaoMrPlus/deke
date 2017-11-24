@@ -12,6 +12,5 @@
 @property(nonatomic,strong)UIImageView * iconImage;
 @property(nonatomic,strong)UILabel     * titleLabel;
 @property(nonatomic,strong)UILabel     * cellLine;
-
 -(void)setItemIcon:(UIImage *)iconimage title:(NSString *)titleStr;
 @end

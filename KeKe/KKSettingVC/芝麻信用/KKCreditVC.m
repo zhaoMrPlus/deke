@@ -27,7 +27,6 @@
     [self setTitle:@"设置"];
     [self.view setBackgroundColor:[UIColor mainGrayColor]];
     [self showBackButtonWithImage:@"icon_back"];
-
 }
 -(void)initUI{
     

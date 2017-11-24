@@ -59,7 +59,6 @@
         self.Uplaodbutton2.tag = i + 100;
         flag = self.Uplaodbutton2.tag;
     }
-
 }
 -(void)bigClick{
     

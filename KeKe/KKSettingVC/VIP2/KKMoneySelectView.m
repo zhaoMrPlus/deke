@@ -34,7 +34,6 @@
         self.button.layer.borderWidth = 1;
         self.button.layer.cornerRadius = 10;
         self.button.layer.borderColor=[UIColor mainGrayColor].CGColor;
-        
     }
 }
 /**

@@ -24,5 +24,4 @@
 
 
 -(void)setbuttonTitle:(NSString *)title iconImage:(UIImage *)icon ButtonImage:(NSString *)BtnUrlImage;
-
 @end

@@ -30,7 +30,6 @@
 }
 -(void)backBarButtonPressed:(id)sender{
     NSLog(@"click left");
-    
 }
 /*
 #pragma mark - Navigation

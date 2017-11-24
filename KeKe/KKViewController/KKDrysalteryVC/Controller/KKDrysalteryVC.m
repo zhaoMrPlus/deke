@@ -23,7 +23,6 @@
     [self showRightButtonWithImage:[UIImage imageNamed:@"homepage_icon_set"]
                        andHigImage:[UIImage imageNamed:@"homepage_icon_set"]];
     [self showBackButtonWithImage:@"homepage_icon_message"];
-
 }
 /**
  exp: getData

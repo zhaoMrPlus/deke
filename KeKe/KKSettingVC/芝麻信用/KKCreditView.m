@@ -23,7 +23,7 @@
     self.titleLabel.text = title;
     self.titleLabel.textAlignment = NSTextAlignmentLeft;
     self.titleLabel.font=[UIFont fontWithName:@"PingFangSC-Light" size:14];
-    
+
     self.downButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.downButton setTitle:btnTitle forState:UIControlStateNormal];
     [self.downButton setTitleColor:titColor forState:UIControlStateNormal];
