@@ -5,7 +5,6 @@
 //  Created by 毛蛋 on 2017/11/16.
 //  Copyright © 2017年 zhb. All rights reserved.
 //
-
 #import "KKeditMessageVC.h"
 #import "UIColor+Factory.h"
 #import "UIView+RMAdditions.h"
@@ -18,7 +17,6 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
     [self StepUI];
     dataArr = [NSArray new];
     [self GetData];
