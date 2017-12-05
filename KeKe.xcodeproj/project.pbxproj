@@ -19,6 +19,8 @@
 		6C37B23B1FD54FA100EA4AD7 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C37B2351FD54FA100EA4AD7 /* UIView+Frame.m */; };
 		6C37B23C1FD54FA100EA4AD7 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C37B2371FD54FA100EA4AD7 /* UIView+Screenshot.m */; };
 		6C37B23F1FD5735000EA4AD7 /* KKUploadHeadActView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C37B23E1FD5735000EA4AD7 /* KKUploadHeadActView.m */; };
+		6C37B2441FD697BB00EA4AD7 /* KKLikeFoodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C37B2431FD697BB00EA4AD7 /* KKLikeFoodVC.m */; };
+		6C37B2471FD697CE00EA4AD7 /* KKSportVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C37B2461FD697CE00EA4AD7 /* KKSportVC.m */; };
 		6C56901F1FC59874001D897C /* KKCharactrtTagsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C56901E1FC59874001D897C /* KKCharactrtTagsVC.m */; };
 		6C5690221FC59D78001D897C /* KKTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5690211FC59D78001D897C /* KKTagsView.m */; };
 		6C5690251FC5A5B5001D897C /* KKTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5690241FC5A5B5001D897C /* KKTipsView.m */; };
@@ -213,6 +215,10 @@
 		6C37B2371FD54FA100EA4AD7 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
 		6C37B23D1FD5735000EA4AD7 /* KKUploadHeadActView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKUploadHeadActView.h; sourceTree = "<group>"; };
 		6C37B23E1FD5735000EA4AD7 /* KKUploadHeadActView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKUploadHeadActView.m; sourceTree = "<group>"; };
+		6C37B2421FD697BB00EA4AD7 /* KKLikeFoodVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLikeFoodVC.h; sourceTree = "<group>"; };
+		6C37B2431FD697BB00EA4AD7 /* KKLikeFoodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLikeFoodVC.m; sourceTree = "<group>"; };
+		6C37B2451FD697CE00EA4AD7 /* KKSportVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSportVC.h; sourceTree = "<group>"; };
+		6C37B2461FD697CE00EA4AD7 /* KKSportVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKSportVC.m; sourceTree = "<group>"; };
 		6C56901D1FC59874001D897C /* KKCharactrtTagsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCharactrtTagsVC.h; sourceTree = "<group>"; };
 		6C56901E1FC59874001D897C /* KKCharactrtTagsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCharactrtTagsVC.m; sourceTree = "<group>"; };
 		6C5690201FC59D78001D897C /* KKTagsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTagsView.h; sourceTree = "<group>"; };
@@ -920,6 +926,10 @@
 				6CD2C0AB1FD12AEE0035EB2E /* KKProfessionVC.m */,
 				6CD2C0AD1FD12B1F0035EB2E /* KKOccupationVC.h */,
 				6CD2C0AE1FD12B1F0035EB2E /* KKOccupationVC.m */,
+				6C37B2421FD697BB00EA4AD7 /* KKLikeFoodVC.h */,
+				6C37B2431FD697BB00EA4AD7 /* KKLikeFoodVC.m */,
+				6C37B2451FD697CE00EA4AD7 /* KKSportVC.h */,
+				6C37B2461FD697CE00EA4AD7 /* KKSportVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1663,8 +1673,10 @@
 				6CD2C1031FD151B70035EB2E /* SCFilterImageView.m in Sources */,
 				6CDED5971FAB293600021F53 /* UIRefreshControl+AFNetworking.m in Sources */,
 				6CDED5941FAB293600021F53 /* UIButton+AFNetworking.m in Sources */,
+				6C37B2441FD697BB00EA4AD7 /* KKLikeFoodVC.m in Sources */,
 				6CDED5931FAB293600021F53 /* UIAlertView+AFNetworking.m in Sources */,
 				6CD1179A1FC3E5A300D7C58C /* KKMoneySelectView.m in Sources */,
+				6C37B2471FD697CE00EA4AD7 /* KKSportVC.m in Sources */,
 				6C37B22C1FD54F8000EA4AD7 /* AdaptUIView.m in Sources */,
 				6CDED6091FAB433A00021F53 /* ZHBHttpTool.m in Sources */,
 				6CDED5FF1FAB3ACB00021F53 /* KBTabbarController.m in Sources */,

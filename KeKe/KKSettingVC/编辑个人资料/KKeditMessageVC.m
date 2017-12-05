@@ -24,7 +24,9 @@
 #import <CoreMedia/CoreMedia.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <CommonCrypto/CommonDigest.h>
-@interface KKeditMessageVC ()<ViewControllerBDelegate,kControllerDelegate,ControllerDelegate,WechatShortVideoDelegate,UIImagePickerControllerDelegate>
+#import "KKSportVC.h"
+#import "KKLikeFoodVC.h"
+@interface KKeditMessageVC ()<ViewControllerBDelegate,kControllerDelegate,ControllerDelegate,WechatShortVideoDelegate,UIImagePickerControllerDelegate,foodControllerDelegate,SportControllerDelegate>
 @end
 @implementation KKeditMessageVC
 - (void)viewDidLoad {
@@ -227,6 +229,34 @@
         case 3:{
             cell.textLabel.text = [[dataArr objectAtIndex:indexPath.section - 1] objectAtIndex:indexPath.row];
             cell.textLabel.font=[UIFont fontWithName:@"PingFangSC-Light" size:14];
+            switch (indexPath.row) {
+                case 0:{
+                    if (rightlabe9 == nil) {
+                        rightlabe9 =[[UILabel alloc] initWithFrame:CGRectMake(ArrowImage.left- 300, (50- 20)/2, 300, 20)];
+                        [rightlabe9 setTextColor:[UIColor grayColor]];
+                        [rightlabe9 setTextAlignment:NSTextAlignmentRight];
+                        [rightlabe9 setFont:[UIFont fontWithName:@"PingFangSC-Light" size:15]];
+                        rightlabe9.text=@"";
+                        [cell.contentView addSubview:rightlabe9];
+                    }
+                    break;
+                }
+                case 1:{
+                    if (rightlabe10 == nil) {
+                        rightlabe10 =[[UILabel alloc] initWithFrame:CGRectMake(ArrowImage.left- 300, (50- 20)/2, 300, 20)];
+                        [rightlabe10 setTextColor:[UIColor grayColor]];
+                        [rightlabe10 setTextAlignment:NSTextAlignmentRight];
+                        [rightlabe10 setFont:[UIFont fontWithName:@"PingFangSC-Light" size:15]];
+                        rightlabe10.text=@"";
+                        [cell.contentView addSubview:rightlabe10];
+                    }
+
+                    break;
+                }
+                default:
+                    break;
+            }
+
             break;
         }
         default:
@@ -342,11 +372,15 @@
         case 3:{
             switch (indexPath.row) {
                 case 0:{
-                    
+                    KKLikeFoodVC * food = [[KKLikeFoodVC alloc] init];
+                    food.delegate5 = self;
+                    [self.navigationController pushViewController:food animated:YES];
                     break;
                 }
                 case 1:{
-                    
+                    KKSportVC * sport =[[KKSportVC alloc] init];
+                    sport.delegate4 = self;
+                    [self.navigationController pushViewController:sport animated:YES];
                     break;
                 }
                 default:
@@ -750,6 +784,14 @@
 }
 -(void)sendValue1:(NSString *)value1{
     rightlabe7.text =value1;
+}
+-(void)sendValue4:(NSString *)value4{
+    rightlabe10.text = value4;
+
+}
+-(void)sendValue5:(NSString *)value5{
+    rightlabe9.text = value5;
+
 }
 /*
 #pragma mark - Navigation

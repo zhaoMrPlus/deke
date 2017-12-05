@@ -20,6 +20,8 @@
     UILabel         *  rightlabe6;
     UILabel         *  rightlabe7;
     UILabel         *  rightlabe8;
+    UILabel         *  rightlabe9;
+    UILabel         *  rightlabe10;
     NSString        *   nickStr;
     KKPlaceView     *   kkplace;
 }
