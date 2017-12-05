@@ -9,8 +9,6 @@
 #import "APAuthV2Info.h"
 
 @implementation APAuthV2Info
-
-
 - (NSString *)description
 {
     if (self.appID.length != 16||self.pid.length != 16) {

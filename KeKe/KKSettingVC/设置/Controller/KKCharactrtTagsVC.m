@@ -13,9 +13,7 @@
 #import "UIView+RMAdditions.h"
 #import "UIViewController+YCCommon.h"
 @interface KKCharactrtTagsVC ()
-
 @end
-
 @implementation KKCharactrtTagsVC
 
 - (void)viewDidLoad {

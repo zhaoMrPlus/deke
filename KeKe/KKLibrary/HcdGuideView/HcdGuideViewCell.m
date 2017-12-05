@@ -39,9 +39,9 @@
     [button setTitle:@"立即体验" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button.layer setCornerRadius:5];
-    [button.layer setBorderColor:[UIColor grayColor].CGColor];
-    [button.layer setBorderWidth:1.0f];
-    [button setBackgroundColor:[UIColor grayColor]];
+////    [button.layer setBorderColor:[UIColor grayColor].CGColor];
+//    [button.layer setBorderWidth:1.0f];
+//    [button setBackgroundColor:[UIColor grayColor]];
     
     self.button = button;
     

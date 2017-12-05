@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface KKuserTextfield : UITextField
+#import "AdaptUITextField.h"
+@interface KKuserTextfield : UITextField{
+    int scroHeight;
+}
 @property(nonatomic,strong)UIImageView * iconimage;
 -(void)createTextfieldforIconImage:(UIImage *)iconImage
                       placeHorlder:(NSString *)plachorler;

@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface KKTipsView : UIView
-@property(nonatomic,strong)UIButton  * button;
+@property(nonatomic,strong)UIButton        * button;
+@property(nonatomic,strong)NSMutableArray  * AddData;
+
 @property(nonatomic,copy)void(^selectBlock)(NSInteger flag);
 
 @end

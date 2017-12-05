@@ -18,6 +18,7 @@
 #import "APAuthV2Info.h"
 #import "WXApi.h"
 #import "WXApiObject.h"
+//#import <ZMCreditSDK/ALCreditService.h>
 @interface AppDelegate ()<WXApiDelegate>
 @end
 @implementation AppDelegate
@@ -41,10 +42,12 @@
     guideView.window = self.window;
     [guideView showGuideViewWithImages:images
                         andButtonTitle:@""
-                   andButtonTitleColor:[UIColor redColor]
-                      andButtonBGColor:[UIColor whiteColor]
-                  andButtonBorderColor:[UIColor whiteColor]];
+                   andButtonTitleColor:nil
+                      andButtonBGColor:nil
+                  andButtonBorderColor:nil];
     [WXApi registerApp:@"wx1bf301b7c806001f" withDescription:@"demo"];
+    //注册支付宝芝麻信用
+//    [[ALCreditService sharedService] resgisterApp];
     return YES;
 }
 - (void)changeNavigationBar

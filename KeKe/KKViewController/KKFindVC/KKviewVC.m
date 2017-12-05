@@ -21,7 +21,7 @@
     [self showRightButtonWithImage:[UIImage imageNamed:@"homepage_icon_set"]
                        andHigImage:[UIImage imageNamed:@"homepage_icon_set"]];
     [self showBackButtonWithImage:@"homepage_icon_message"];
-    [self.view setBackgroundColor:[UIColor mainGrayColor]];
+    [self.view setBackgroundColor:UIColorFromRGB(0x33FFFF)];
 
 }
 

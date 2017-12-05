@@ -15,13 +15,11 @@
 #import "KKVipSettingVC.h"
 #import "KKCreditVC.h"
 #import "KKeditMessageVC.h"
+#import "KKUploadHeadActView.h"
 #import "UIViewController+YCCommon.h"
 @interface KKSettingVC ()
-
 @end
-
 @implementation KKSettingVC
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setAutomaticallyAdjustsScrollViewInsets:NO];
@@ -84,13 +82,48 @@
             KKHeaderDetailView *kk=[[KKHeaderDetailView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200) withImageURL:@"头像" name:@"小土冒"];
             [cell.contentView addSubview:kk];
             kk.editBlock = ^{
-                
+
                 KKeditMessageVC *mess=[[KKeditMessageVC alloc] init];
                 [self.navigationController pushViewController:mess animated:YES];
 
             };
             kk.uploadBlock = ^{
-                
+                KKUploadHeadActView * upload =[[KKUploadHeadActView alloc] init];
+                [[UIApplication sharedApplication].keyWindow addSubview:upload];
+                upload.ActBlock = ^(NSInteger tag) {
+                    switch (tag) {
+                        case 0:{
+                            UIImagePickerControllerSourceType sourceType = UIImagePickerControllerSourceTypeCamera;
+                            if ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeCamera]) {
+                                UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+                                //设置拍照后的图片可被编辑
+                                picker.allowsEditing = YES;
+                                picker.sourceType = sourceType;
+                                picker.showsCameraControls = YES;
+                                [self presentViewController:picker animated:YES completion:nil];
+                            } else {
+                                NSLog(@"模拟其中无法打开照相机,请在真机中使用");
+                            }
+
+                            break;
+                        }
+                        case 1:{
+                            UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+                            picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+                            //设置选择后的图片可被编辑
+                            picker.allowsEditing = YES;
+                            [self presentViewController:picker animated:YES completion:nil];
+
+                            break;
+                        }
+                        case 2:{
+                            
+                            break;
+                        }
+                        default:
+                            break;
+                    }
+                };
             };
         }
         if (indexPath.section == 1) {

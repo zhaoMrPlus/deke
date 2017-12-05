@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "AdaptUIButton.h"
+#import "AdaptUIButton.h"
 @interface KKHeaderDetailView : UIView
 @property(nonatomic,strong)UIButton  * headButton;
 @property(nonatomic,strong)UILabel   * nameLabel;

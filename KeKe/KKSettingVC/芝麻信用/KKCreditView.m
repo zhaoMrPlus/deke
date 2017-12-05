@@ -34,8 +34,6 @@
     [self addSubview:self.iconImage];
     [self addSubview:self.titleLabel];
     [self addSubview:self.downButton];
-
-
 }
 -(void)bindingClick{
     if (_bindingBlock) {

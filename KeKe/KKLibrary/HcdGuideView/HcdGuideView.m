@@ -88,11 +88,11 @@
     
     if (!show) {
         self.images = images;
-        self.buttonBorderColor = borderColor;
-        self.buttonBgColor = bgColor;
+        self.buttonBorderColor = nil;
+        self.buttonBgColor = nil;
         self.buttonTitle = title;
-        self.titleColor = titleColor;
-        self.pageControl.numberOfPages =images.count;
+        self.titleColor = nil;
+//        self.pageControl.numberOfPages =images.count;
         
         if (nil == self.window) {
             self.window = [UIApplication sharedApplication].keyWindow;
@@ -132,7 +132,7 @@
     if (indexPath.row == self.images.count - 1) {
         [cell.button setHidden:NO];
         [cell.button addTarget:self action:@selector(nextButtonHandler) forControlEvents:UIControlEventTouchUpInside];
-        [cell.button setBackgroundColor:self.buttonBgColor];
+        [cell.button setBackgroundColor:nil];
 //        [cell.button setTitle:self.buttonTitle forState:UIControlStateNormal];
 //        [cell.button setTitleColor:self.titleColor forState:UIControlStateNormal];
 //        cell.button.layer.borderColor = [self.buttonBorderColor CGColor];

@@ -23,9 +23,5 @@
 @property(strong)NSString *signDate;
 @property(strong)NSString *service;
 
-
-
 - (NSString *)description;
-
-
 @end

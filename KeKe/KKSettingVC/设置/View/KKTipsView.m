@@ -30,7 +30,7 @@
         self.button.layer.cornerRadius = 5;
         self.button.tag = i;
         self.button.titleLabel.font = [UIFont systemFontOfSize:12];
-        [self.button setTitle:@"标签" forState:UIControlStateNormal];//[NSString stringWithFormat:@"%d",i]
+        [self.button setTitle:@"标签" forState:UIControlStateNormal];
         [self.button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         [self.button setBackgroundColor:[UIColor mainGrayColor]];
         [self.button addTarget:self action:@selector(tagButtonAction:) forControlEvents:UIControlEventTouchUpInside];
@@ -46,6 +46,7 @@
         [bt setBackgroundColor:[UIColor mainGrayColor]];
         [bt setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         bt.selected = NO;
+        
     }else{
         [bt setBackgroundColor:UIColorFromRGB(0x2bdcff)];
         [bt setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

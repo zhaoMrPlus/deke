@@ -13,11 +13,12 @@
 #import "KKLoginBaseView.h"
 #import "KKSettingVC.h"
 #import "UIViewController+YCCommon.h"
+#import "KBTabbarController.h"
+#import "WXApi.h"
 #define KScreenW [[UIScreen mainScreen] bounds].size.width
 #define KScreenH [[UIScreen mainScreen] bounds].size.height
-#import "KBTabbarController.h"
-@interface KKLoginVC ()<UITextFieldDelegate>
 
+@interface KKLoginVC ()<UITextFieldDelegate,WXApiDelegate>
 @end
 
 @implementation KKLoginVC
@@ -76,6 +77,8 @@
         _KKuserName.delegate=self;
         _KKuserName.textColor=UIColorFromRGB(0x2bdcff);
         _KKuserName.tintColor=UIColorFromRGB(0x2bdcff);
+        self.KKuserName.autoresizingMask = UIViewAutoresizingFlexibleTopMargin
+        | UIViewAutoresizingFlexibleRightMargin;
 
     }
     //倒计时按钮
@@ -97,6 +100,9 @@
     //下面哪部分
     self.KKbaseview = [[KKLoginBaseView alloc]initWithFrame:CGRectMake(0, self.KKuserName.bottom + 59, KScreenW, KScreenH-(44 + 64 + 100 + 27 + 50 +59))];
     [self.view addSubview:self.KKbaseview];
+    self.KKbaseview.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin
+    | UIViewAutoresizingFlexibleRightMargin;
+
     __weak typeof(self)weakself = self;
     self.KKbaseview.KKloginBlock=^{
         [weakself login];
@@ -137,10 +143,30 @@
 //    }
 }
 -(void)QQLogin{
-    
+
 }
 -(void)WechatLogin{
-
+    /**
+     第三方登录微信调起
+     */
+    if ([WXApi isWXAppInstalled]) {
+        SendAuthReq *req = [[SendAuthReq alloc] init];
+        req.scope = @"snsapi_userinfo";
+        req.state = @"App";
+        [WXApi sendReq:req];
+    }
+    else {
+        /**
+         没注册，或者没安装都会提示
+         */
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"温馨提示"
+                                                                       message:@"请先安装微信客户端"
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *actionConfirm = [UIAlertAction actionWithTitle:@"确定" style
+                                                                     :UIAlertActionStyleDefault handler
+                                                                     :nil];
+        [alert addAction:actionConfirm];
+    }
 }
 #pragma mark - 屏幕上弹
 -(void)textFieldDidBeginEditing:(UITextField *)textField
