@@ -13,12 +13,16 @@
 -(NSMutableArray *)datasourceData{
 
     if (_datasourceData == nil) {
-        _datasourceData =[NSMutableArray arrayWithObjects:@"拍摄照片",@"拍摄视频",@"相册选视频",@"相册选照片",@"取消", nil];
+        _datasourceData =[NSMutableArray arrayWithObjects:
+                          @"拍摄照片",
+                          @"拍摄视频",
+                          @"相册选视频",
+                          @"相册选照片",
+                          @"取消",
+                          nil];
     }
     return _datasourceData;
 }
-
-
 -(instancetype)init{
     self=[super initWithFrame:[UIApplication sharedApplication].keyWindow.frame];
     if (self) {

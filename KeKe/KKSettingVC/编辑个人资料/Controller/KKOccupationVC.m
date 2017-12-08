@@ -54,7 +54,6 @@
     
     [_delegate2 sendValue2:textfield.text];
     [self.navigationController popViewControllerAnimated:YES];
-
 }/*
 #pragma mark - Navigation
 

@@ -15,7 +15,6 @@
 @interface KKProfessionVC : UIViewController
 {
     UITextField *textfield;
-    
 }
 @property(weak,nonatomic)id delegate1;
 

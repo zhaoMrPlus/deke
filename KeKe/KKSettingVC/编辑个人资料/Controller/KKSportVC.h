@@ -9,16 +9,11 @@
 #import <UIKit/UIKit.h>
 @protocol SportControllerDelegate // 代理传值方法
 - (void)sendValue4:(NSString *)value4;
-
 @end
-
 @interface KKSportVC : UIViewController
 {
     UITextField *textfield;
-    
 }
 @property(weak,nonatomic)id delegate4;
-
-
 
 @end

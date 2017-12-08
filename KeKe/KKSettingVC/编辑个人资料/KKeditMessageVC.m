@@ -46,7 +46,6 @@
                @[@"个性标签 "],
                @[@"美食",@"运动"]];
     [_myTable reloadData];
-    
 }
 -(void)StepUI{
     

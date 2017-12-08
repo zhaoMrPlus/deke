@@ -102,7 +102,6 @@
 - (void)viewDidLayoutSubviews {
     if ([table respondsToSelector:@selector(setSeparatorInset:)]) {
         [table setSeparatorInset:UIEdgeInsetsZero];
-        
     }
     if ([table respondsToSelector:@selector(setLayoutMargins:)])  {
         [table setLayoutMargins:UIEdgeInsetsZero];
@@ -116,7 +115,6 @@
         [cell setSeparatorInset:UIEdgeInsetsZero];
     }
 }
-
 
 /*
  // Only override drawRect: if you perform custom drawing.

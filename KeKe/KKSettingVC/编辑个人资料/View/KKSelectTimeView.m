@@ -305,7 +305,6 @@
         });
     }
 }
-
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
 {
     //设置文字的属性

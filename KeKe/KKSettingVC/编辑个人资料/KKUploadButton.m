@@ -15,7 +15,6 @@
 
     self.icon =[[UIImageView alloc] init];
     self.icon.image = iconIamge;
-    
     self.label = [[UILabel alloc] init];
     [self.label setText:tit];
     [self.label setTextAlignment:1];
@@ -24,7 +23,6 @@
     [self addSubview:self.label];
     [self addSubview:self.icon];
     
-
 }
 -(void)layoutSubviews{
     self.icon.frame = CGRectMake((self.width - 30) / 2, (self.height - 30) /2, 30, 30);

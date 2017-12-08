@@ -15,7 +15,6 @@
 -(instancetype)initWithFrame:(CGRect)frame{
     self=[super initWithFrame:frame];
     if (self) {
-        
     }
     return self;
 }
@@ -29,8 +28,10 @@
     [self.Uplaodbutton addTarget:self action:@selector(bigClick) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.Uplaodbutton];
     self.Uplaodbutton.backgroundColor=UIColorFromRGB(0xf7fafa);
-    self.Uplaodbutton.frame = CGRectMake(0, 0, self.width / 3 * 2-2 , self.width/ 3 * 2-2);
-    
+    self.Uplaodbutton.frame = CGRectMake(0,
+                                         0,
+                                         self.width / 3 * 2-2 ,
+                                         self.width/ 3 * 2-2);
     /**
      * 地下三个小big
      */
@@ -41,7 +42,10 @@
         [self.Uplaodbutton1 addTarget:self action:@selector(bigClick1) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.Uplaodbutton1];
         self.Uplaodbutton1.backgroundColor=UIColorFromRGB(0xf7fafa);
-        self.Uplaodbutton1.frame = CGRectMake(0 + index * (self.frame.size.width / 3 + 1), self.Uplaodbutton.bottom + 2, self.width / 3 -3 , self.width/ 3 -2);
+        self.Uplaodbutton1.frame = CGRectMake(0 + index * (self.frame.size.width / 3 + 1),
+                                              self.Uplaodbutton.bottom + 2,
+                                              self.width / 3 -3 ,
+                                              self.width/ 3 -2);
         self.Uplaodbutton1.tag = index + 3;
          type = self.Uplaodbutton1.tag;
     }
@@ -55,7 +59,10 @@
         [self.Uplaodbutton2 addTarget:self action:@selector(bigClick2) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.Uplaodbutton2];
         self.Uplaodbutton2.backgroundColor=UIColorFromRGB(0xf7fafa);
-        self.Uplaodbutton2.frame = CGRectMake(self.Uplaodbutton.right + 2, 0+i*(self.frame.size.width / 3-1 ), self.width / 3  , self.width/ 3 -4);
+        self.Uplaodbutton2.frame = CGRectMake(self.Uplaodbutton.right + 2,
+                                              0+i*(self.frame.size.width / 3-1 ),
+                                              self.width / 3  ,
+                                              self.width/ 3 -4);
         self.Uplaodbutton2.tag = i + 100;
         flag = self.Uplaodbutton2.tag;
     }

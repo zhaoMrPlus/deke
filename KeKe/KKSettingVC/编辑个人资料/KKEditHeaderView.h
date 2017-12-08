@@ -17,7 +17,6 @@
 @property(nonatomic,strong)KKUploadButton * Uplaodbutton;
 @property(nonatomic,strong)KKUploadButton * Uplaodbutton1;
 @property(nonatomic,strong)KKUploadButton * Uplaodbutton2;
-
 @property(nonatomic,copy)void(^bigBlock)(void);
 @property(nonatomic,copy)void(^twoBlock)(NSInteger tag);
 @property(nonatomic,copy)void(^threeBlock)(NSInteger tag1);

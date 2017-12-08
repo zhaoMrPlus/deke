@@ -27,5 +27,4 @@
 }
 @property(nonatomic,strong)UITableView  * myTable;
 @property (nonatomic, strong) UIButton *selectButton;
-
 @end

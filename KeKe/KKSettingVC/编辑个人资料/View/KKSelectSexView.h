@@ -22,7 +22,6 @@ typedef void(^XuliPickBlock)(NSString *xuliDate);
 
 @property (nonatomic,strong)XuliPickBlock xulihblock;
 
-
 - (instancetype)initWithFrame:(CGRect)frame type:(NSString *)ty;
 
 @end

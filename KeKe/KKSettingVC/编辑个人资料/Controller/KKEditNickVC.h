@@ -14,7 +14,6 @@
 @interface KKEditNickVC : UIViewController<UITextFieldDelegate>
 {
     UITextField *textfield;
-
 }
 @property(weak,nonatomic)id delegate;
 @end
