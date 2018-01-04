@@ -34,7 +34,6 @@
         table.scrollEnabled = NO;
         [table setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
         [UIView animateWithDuration:0.25 animations:^{
-            
             table.frame = CGRectMake(0,
                                      self.frame.size.height - 150,
                                      self.frame.size.width,
@@ -64,7 +63,6 @@
         [titlebel setTextAlignment:NSTextAlignmentCenter];
         [titlebel setText:[_datasourceData objectAtIndex:indexPath.row]];
         [titlebel setFont:[UIFont fontWithName:@"PingFangSC-Light" size:16]];
-        
     }
     if (indexPath.row == 2) {
         titlebel.hidden = YES;

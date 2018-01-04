@@ -64,7 +64,10 @@ static NSString * iden = @"iden";
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:iden];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:iden];
-         titlebel =[[UILabel alloc] initWithFrame:CGRectMake(0, (cell.frame.size.height-20)/2, self.frame.size.width, 20)];
+         titlebel =[[UILabel alloc] initWithFrame:CGRectMake(0,
+                                                             (cell.frame.size.height-20)/2,
+                                                             self.frame.size.width,
+                                                             20)];
         [cell.contentView addSubview:titlebel];
         [titlebel setTextAlignment:NSTextAlignmentCenter];
         [titlebel setText:[_datasourceData objectAtIndex:indexPath.row]];
@@ -73,11 +76,17 @@ static NSString * iden = @"iden";
     }
     if (indexPath.row == 4) {
         titlebel.hidden = YES;
-        UILabel * line =[[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 10)];
+        UILabel * line =[[UILabel alloc] initWithFrame:CGRectMake(0,
+                                                                  0,
+                                                                  self.frame.size.width,
+                                                                  10)];
         [cell.contentView addSubview:line];
         line.backgroundColor=[UIColor grayColor];
         
-        UILabel * cancellabe =[[UILabel alloc] initWithFrame:CGRectMake(0, line.bottom + 10, self.frame.size.width, 20)];
+        UILabel * cancellabe =[[UILabel alloc] initWithFrame:CGRectMake(0,
+                                                                        line.bottom + 10,
+                                                                        self.frame.size.width,
+                                                                        20)];
         [cell.contentView addSubview:cancellabe];
         [cancellabe setTextAlignment:NSTextAlignmentCenter];
         [cancellabe setText:[_datasourceData objectAtIndex:indexPath.row]];

@@ -22,8 +22,8 @@
     
     for (int i = 0; i < 12; i++)
     {
-        int a = i/6;   //取余
-        int b = i%5;   //取整
+        int a = i/6;
+        int b = i%5;
         self.button = [[UIButton alloc] initWithFrame:CGRectMake(10+(10+(self.frame.size.width-6)/6)*b, 15+(30+10)*a, (self.frame.size.width-30)/6, 30)];
         self.button.layer.borderColor = [UIColor mainGrayColor].CGColor;
         self.button.layer.borderWidth = 1;

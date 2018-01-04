@@ -26,8 +26,8 @@
     /*============================================================================*/
     /*=======================需要填写商户app申请的===================================*/
     /*============================================================================*/
-    NSString *partner = @"2088421837876356";
-    NSString *seller = @"pay@xiaoxinchat.com";
+    NSString *partner = @"2088421837870096";
+    NSString *seller = @"pay@XXXXX.com";
     NSString *privateKey = @"MIICXAIBAAKBgQCinHZRu/QRg8LpPEVCnjSXKSXsHyMUycOnxBp9VJXOK5pIR9md64R03PZ062jiAh+Qj8juUHxdjyl4gCof5FhFm/TP12A3EtB7498hBWyHNhq25SKtj2e/4CfOb7k7vyHZ72YEgRdjqkLrP5Hff0c4do0z6WIpy6aIgs9+XYPlIwIDAQABAoGAGzbENnmWJzg97nq/vJ5tfr7MMfAkFt6NeA5BwKffSlnRwDcGHH/F8yjntjmPnANu9OqbXgbqSV4kOp54bk3w17EriN5AwtxWEX4W5TsOFGqBcULLPFCIuwiL5ftcxoXZJOnuH2U3GVWd29vChnaD/IFxt2qFbOe/NysC0t6ReQECQQDQP2V5wz5VZCyL8+oqI/3vijmvh+x3hIu37IKB26RfFDvBP5AumlPgS0JA/pTG+JsqBHSDY88DMb9sDqUerReTAkEAx+YaZ9hS/vEfQhAbvGV9r138RS84sjD8HB6TRn7gsmgddHmEHa40RufBC091dKfMaeQ5C1GlucujUYZ0Ag1WMQJAVEWjcf/hxLqSEFy3oTAJfhtIttDhj4gy5k4ujhBtVxCgEdcAKOvJD5ZFDHo5iL9oQzukTttgFaHXHgpbJavUQwJACB3Ssqa47/sQXtlSlvqz+LvjM1fwgGO2yNmA91rNetD5aTJJ5/6bxslAMFpglYT+qsoGeuwsw3d+QSApc6/g8QJBAM7DTiGezb4gYzjSmdR/vm4KdQePVon6jY1qG1aPdWeJeWjJRkxEzcAYo9SKMGHqpeYIeZ4zapJbot09wVflwEc=";
     /*============================================================================*/
     /*============================================================================*/
@@ -37,12 +37,12 @@
         [seller length] == 0 ||
         [privateKey length] == 0)
     {
-//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
-//                                                        message:@"缺少partner或者seller或者私钥。"
-//                                                       delegate:self
-//                                              cancelButtonTitle:@"确定"
-//                                              otherButtonTitles:nil];
-//        [alert show];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                        message:@"缺少partner或者seller或者私钥。"
+                                                       delegate:self
+                                              cancelButtonTitle:@"确定"
+                                              otherButtonTitles:nil];
+        [alert show];
         return;
     }
     
@@ -69,9 +69,6 @@
     
     [[AlipaySDK defaultService] payOrder:@"20160324012412412" fromScheme:appScheme callback:^(NSDictionary *resultDic) {
         
-//        [self.navigationController popViewControllerAnimated:YES];
-//        [self.delegate changeValueloaddata:@"1"];
-        
         NSLog(@"reslut = %@",resultDic);
     }];
     
@@ -96,34 +93,6 @@
 }
 
 +(void)WechatpayOrder:(NSString *)WxOrderStr AndPriceStr:(NSString *)pricestr{
-    
-//    NSDictionary *dict;
-//    NSMutableString *stamp  = [dict objectForKey:@"timestamp"];
-//    //调起微信支付
-//    PayReq* req             = [[PayReq alloc] init];
-//    req.openID              = [dict objectForKey:@"appid"];
-//    req.partnerId           = [dict objectForKey:@"partnerid"];
-//    req.prepayId            = [dict objectForKey:@"prepayid"];
-//    req.nonceStr            = [dict objectForKey:@"noncestr"];
-//    req.timeStamp           = stamp.intValue;
-//    req.package             = [dict objectForKey:@"packages"];
-//    req.sign                = [dict objectForKey:@"sign"];
-//    [WXApi sendReq:req];
-//    NSLog(@"appid=%@\npartid=%@\nprepayid=%@\nnoncestr=%@\ntimestamp=%ld\npackage=%@\nsign=%@",req.openID,req.partnerId,req.prepayId,req.nonceStr,(long)req.timeStamp,req.package,req.sign );
-/**
- "appid": "wxb4ba3c02aa476ea1",
- "noncestr": "d1e6ecd5993ad2d06a9f50da607c971c",
- "package": "Sign=WXPay",
- "partnerid": "10000100",
- "prepayid": "wx20160218122935e3753eda1f0066087993",
- "timestamp": "1455769775",
- "sign": "F6DEE4ADD82217782919A1696500AF06"
- 
- 作者：WangK_Dev
- 链接：http://www.jianshu.com/p/1c1c834b6d52
- 來源：简书
- 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
- */
     //日志输出
     //需要创建这个支付对象
     PayReq *req   = [[PayReq alloc] init];
