@@ -12,7 +12,6 @@
 @implementation KKUploadButton
 
 -(void)seticon:(UIImage *)iconIamge title:(NSString *)tit{
-
     self.icon =[[UIImageView alloc] init];
     self.icon.image = iconIamge;
     self.label = [[UILabel alloc] init];

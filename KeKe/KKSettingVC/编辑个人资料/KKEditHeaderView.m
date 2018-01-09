@@ -80,6 +80,7 @@
     }
 
 }
+
 -(void)bigClick2{
 
     if (_twoBlock) {

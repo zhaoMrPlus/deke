@@ -39,6 +39,7 @@
         [myTableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
     }
 }
+
 -(void)getData{
     iconArr =[NSArray arrayWithObjects:
               @"认证",
@@ -63,6 +64,7 @@
         default:
             break;
     }
+    
     return 0;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

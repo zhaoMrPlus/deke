@@ -73,7 +73,6 @@
     if ([_payType isEqualToString:@"2"]) {
         [KKPayModel WechatpayOrder:@"" AndPriceStr:@"12"];
     }
-    
 }
 -(void)getData{
 

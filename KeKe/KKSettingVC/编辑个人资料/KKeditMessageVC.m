@@ -481,6 +481,7 @@
                     }
                 };
             };
+            
             kkedit.twoBlock = ^(NSInteger tag) {
                 switch (tag) {
                         

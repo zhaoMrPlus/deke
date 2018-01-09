@@ -20,6 +20,5 @@
 @property(nonatomic,copy)void(^bigBlock)(void);
 @property(nonatomic,copy)void(^twoBlock)(NSInteger tag);
 @property(nonatomic,copy)void(^threeBlock)(NSInteger tag1);
-
 -(void)setbuttonTitle:(NSString *)title iconImage:(UIImage *)icon ButtonImage:(NSString *)BtnUrlImage;
 @end

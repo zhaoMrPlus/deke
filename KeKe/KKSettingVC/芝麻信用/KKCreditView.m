@@ -41,6 +41,7 @@
         _bindingBlock();
     }
 }
+
 -(void)layoutSubviews{
     
     self.iconImage.frame = CGRectMake(15, (self.height - 22) / 2, 22, 22);

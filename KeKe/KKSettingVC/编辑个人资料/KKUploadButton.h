@@ -12,4 +12,5 @@
 @property(nonatomic,strong)UIImageView * icon;
 @property(nonatomic,strong)UILabel     * label;
 -(void)seticon:(UIImage *)iconIamge title:(NSString *)tit;
+
 @end

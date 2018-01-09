@@ -28,9 +28,6 @@
 
 @property (nonatomic,copy) NSString *xiliPick;
 
-
-
-
 @end
 @implementation KKSelectSexView
 //type = 1

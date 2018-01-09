@@ -55,7 +55,6 @@
             _selectBlock(index);
         }
     }
-    
 }
 
 /*
