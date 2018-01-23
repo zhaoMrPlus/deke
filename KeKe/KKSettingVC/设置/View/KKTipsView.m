@@ -51,12 +51,10 @@
         [bt setBackgroundColor:UIColorFromRGB(0x2bdcff)];
         [bt setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         bt.selected = YES;
-
     }
         if (_selectBlock) {
             _selectBlock(1);
-        }
-    
+        }    
 }
 
 

@@ -75,7 +75,6 @@
         [cancellabe setTextAlignment:NSTextAlignmentCenter];
         [cancellabe setText:[_datasourceData objectAtIndex:indexPath.row]];
         [cancellabe setFont:[UIFont fontWithName:@"PingFangSC-Light" size:16]];
-        
     }
     return cell;
 }
@@ -86,6 +85,7 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (_ActBlock) {
+        
         _ActBlock(indexPath.row);
     }
     [self remove];

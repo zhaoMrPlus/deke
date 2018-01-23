@@ -12,7 +12,6 @@
 @implementation KKTagsView
 
 -(void)setPlaceHorlder:(NSString *)placehorlder setbuttonBackground:(UIColor *)bgcolor titleColor:(UIColor *)titColor buttonTitle:(NSString *)tit{
-
     self.KKTextfield = [[UITextField alloc] init];
     self.KKTextfield.delegate = self;
     NSString *holderText = placehorlder;
@@ -24,16 +23,15 @@
                         value:[UIFont fontWithName:@"PingFangSC-Light" size:14]
                         range:NSMakeRange(0, holderText.length)];
     self.KKTextfield.attributedPlaceholder = placeholder;
-
     self.KKDownBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.KKDownBtn setBackgroundColor:bgcolor];
     [self.KKDownBtn setTitleColor:titColor forState:UIControlStateNormal];
     [self.KKDownBtn setTitle:tit forState:UIControlStateNormal];
     [self.KKDownBtn addTarget:self action:@selector(ClickDown) forControlEvents:UIControlEventTouchUpInside];
     [self.KKDownBtn.titleLabel setFont:[UIFont fontWithName:@"PingFangSC-Light" size:13]];
-
     [self addSubview:self.KKDownBtn];
     [self addSubview:self.KKTextfield];
+
 }
 -(void)layoutSubviews{
     
