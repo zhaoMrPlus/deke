@@ -33,7 +33,6 @@
 }
 -(void)setItemIcon:(UIImage *)iconimage
              title:(NSString *)titleStr{
-    
     _titleLabel.text = titleStr;
     _iconImage.image = iconimage;
 }

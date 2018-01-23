@@ -37,6 +37,7 @@
     [self addSubview:self.editButton];
     [self addSubview:self.nameLabel];
     [self addSubview:self.headButton];
+    
 }
 -(void)layoutSubviews{
 

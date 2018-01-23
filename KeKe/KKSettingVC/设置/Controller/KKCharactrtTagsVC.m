@@ -38,13 +38,12 @@
     [tipLabel setText:@"请选择标签"];
     [tipLabel setTextAlignment:NSTextAlignmentLeft];
     [tipLabel setFont:[UIFont fontWithName:@"PingFangSC-Light" size:15]];
-    
+
     KKTipsView *tips = [[KKTipsView alloc] initWithFrame:CGRectMake(0, kktag.bottom + 44 , self.view.frame.size.width, self.view.frame.size.height- 5 - 50 - 44)];
     tips.backgroundColor=[UIColor whiteColor];
     [self.view addSubview:tips];
 }
 -(void)getData{
-
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

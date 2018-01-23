@@ -39,7 +39,6 @@
         [myTableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
     }
 }
-
 -(void)getData{
     iconArr =[NSArray arrayWithObjects:
               @"认证",

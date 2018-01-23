@@ -11,7 +11,6 @@
 #import "KKuserTextfield.h"
 #import "KKLoginBaseView.h"
 @interface KKLoginVC : UIViewController
-
 @property(nonatomic,strong)KKuserTextfield * KKuserName;
 @property(nonatomic,strong)UIImageView     * KKphoneIcon;
 @property(nonatomic,strong)UIImageView     * KKpassIcon;

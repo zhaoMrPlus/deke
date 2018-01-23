@@ -22,7 +22,6 @@
                        andHigImage:[UIImage imageNamed:@"homepage_icon_set"]];
     [self showBackButtonWithImage:@"homepage_icon_message"];
     [self.view setBackgroundColor:UIColorFromRGB(0x0099FF)];
-
 }
 
 -(void)rightBarButtonPressed:(id)sender{
@@ -31,7 +30,6 @@
     setting.hidesBottomBarWhenPushed=YES;// 进入后隐藏tabbar
     [self.navigationController pushViewController:setting animated:YES];
     self.hidesBottomBarWhenPushed = NO;// 退出时显示tabbar
-
 }
 -(void)backBarButtonPressed:(id)sender{
     NSLog(@"click left");

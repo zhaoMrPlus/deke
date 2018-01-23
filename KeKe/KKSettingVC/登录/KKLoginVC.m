@@ -231,7 +231,6 @@
 //重新获取验证码
 -(void)reGetDown{
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
