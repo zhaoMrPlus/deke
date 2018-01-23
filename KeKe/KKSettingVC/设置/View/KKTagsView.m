@@ -31,8 +31,8 @@
     [self.KKDownBtn.titleLabel setFont:[UIFont fontWithName:@"PingFangSC-Light" size:13]];
     [self addSubview:self.KKDownBtn];
     [self addSubview:self.KKTextfield];
-    
 
+    
 }
 -(void)layoutSubviews{
     

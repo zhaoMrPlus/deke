@@ -105,7 +105,6 @@
                             } else {
                                 NSLog(@"模拟其中无法打开照相机,请在真机中使用");
                             }
-
                             break;
                         }
                         case 1:{
@@ -114,11 +113,9 @@
                             //设置选择后的图片可被编辑
                             picker.allowsEditing = YES;
                             [self presentViewController:picker animated:YES completion:nil];
-
                             break;
                         }
                         case 2:{
-                            
                             break;
                         }
                         default:
