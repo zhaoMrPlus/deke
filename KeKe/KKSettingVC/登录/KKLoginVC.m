@@ -226,7 +226,6 @@
             [weakSelf.timeBtn setTitle:[NSString stringWithFormat:@"%lis",totoalSecond] forState:UIControlStateNormal];
             weakSelf.timeBtn.titleLabel.font=[UIFont fontWithName:@"PingFangSC-Light" size:12];
         }
-        
     }];
 }
 //重新获取验证码

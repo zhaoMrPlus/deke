@@ -28,6 +28,7 @@
     self.label.frame = CGRectMake(0, self.icon.bottom + 17, self.width, 30);
 
 }
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
