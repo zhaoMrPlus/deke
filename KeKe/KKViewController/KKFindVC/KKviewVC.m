@@ -35,8 +35,12 @@
 -(void)proximityStateDidChange{
     if ([UIDevice currentDevice].proximityState) {
         NSLog(@"靠近");
+        UIAlertView *ac=[[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"靠近了" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+        [ac show];
     }else{
         NSLog(@"离开");
+        UIAlertView *ac=[[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"离开了" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+        [ac show];
 
     }
 }

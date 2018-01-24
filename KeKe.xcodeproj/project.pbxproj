@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C261EB320187C0200AA9691 /* close_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C261EAC20187C0200AA9691 /* close_btn@2x.png */; };
+		6C261EB420187C0200AA9691 /* redpacket_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C261EAD20187C0200AA9691 /* redpacket_bg@2x.png */; };
+		6C261EB520187C0200AA9691 /* redpacket_open_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C261EAE20187C0200AA9691 /* redpacket_open_btn@2x.png */; };
+		6C261EB620187C0200AA9691 /* WSRedPacketView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C261EB020187C0200AA9691 /* WSRedPacketView.m */; };
+		6C261EB720187C0200AA9691 /* WSRewardConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C261EB220187C0200AA9691 /* WSRewardConfig.m */; };
 		6C37B2271FD54F8000EA4AD7 /* AdaptUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C37B21C1FD54F8000EA4AD7 /* AdaptUIButton.m */; };
 		6C37B2281FD54F8000EA4AD7 /* AdaptUIImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C37B21E1FD54F8000EA4AD7 /* AdaptUIImageView.m */; };
 		6C37B2291FD54F8000EA4AD7 /* AdaptUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C37B2201FD54F8000EA4AD7 /* AdaptUILabel.m */; };
@@ -191,6 +196,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C261EAC20187C0200AA9691 /* close_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close_btn@2x.png"; sourceTree = "<group>"; };
+		6C261EAD20187C0200AA9691 /* redpacket_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redpacket_bg@2x.png"; sourceTree = "<group>"; };
+		6C261EAE20187C0200AA9691 /* redpacket_open_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redpacket_open_btn@2x.png"; sourceTree = "<group>"; };
+		6C261EAF20187C0200AA9691 /* WSRedPacketView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSRedPacketView.h; sourceTree = "<group>"; };
+		6C261EB020187C0200AA9691 /* WSRedPacketView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSRedPacketView.m; sourceTree = "<group>"; };
+		6C261EB120187C0200AA9691 /* WSRewardConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSRewardConfig.h; sourceTree = "<group>"; };
+		6C261EB220187C0200AA9691 /* WSRewardConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSRewardConfig.m; sourceTree = "<group>"; };
 		6C37B21B1FD54F8000EA4AD7 /* AdaptUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdaptUIButton.h; sourceTree = "<group>"; };
 		6C37B21C1FD54F8000EA4AD7 /* AdaptUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdaptUIButton.m; sourceTree = "<group>"; };
 		6C37B21D1FD54F8000EA4AD7 /* AdaptUIImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdaptUIImageView.h; sourceTree = "<group>"; };
@@ -622,6 +634,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C261EAB20187C0200AA9691 /* WSRedPacketView */ = {
+			isa = PBXGroup;
+			children = (
+				6C261EAC20187C0200AA9691 /* close_btn@2x.png */,
+				6C261EAD20187C0200AA9691 /* redpacket_bg@2x.png */,
+				6C261EAE20187C0200AA9691 /* redpacket_open_btn@2x.png */,
+				6C261EAF20187C0200AA9691 /* WSRedPacketView.h */,
+				6C261EB020187C0200AA9691 /* WSRedPacketView.m */,
+				6C261EB120187C0200AA9691 /* WSRewardConfig.h */,
+				6C261EB220187C0200AA9691 /* WSRewardConfig.m */,
+			);
+			path = WSRedPacketView;
+			sourceTree = "<group>";
+		};
 		6C37B21A1FD54F8000EA4AD7 /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
@@ -1279,6 +1305,7 @@
 		6CDED5271FAB236F00021F53 /* KKLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				6C261EAB20187C0200AA9691 /* WSRedPacketView */,
 				6CD2C1351FD151CE0035EB2E /* MBProgressHUD */,
 				6CD2C1171FD151C30035EB2E /* WechatShortVideo */,
 				6CD2C0B31FD151B70035EB2E /* SCRecorder */,
@@ -1610,6 +1637,7 @@
 			files = (
 				6CD2C12F1FD151C30035EB2E /* WechatShortVideo_scan_focus.png in Resources */,
 				6CDED5031FAB1EB300021F53 /* LaunchScreen.storyboard in Resources */,
+				6C261EB520187C0200AA9691 /* redpacket_open_btn@2x.png in Resources */,
 				6CDED5001FAB1EB300021F53 /* Assets.xcassets in Resources */,
 				6CD2C0F81FD151B70035EB2E /* LICENSE in Resources */,
 				6C9FE66B1FCD880E006A0336 /* Poseidon.bundle in Resources */,
@@ -1619,9 +1647,11 @@
 				6CD2C1301FD151C30035EB2E /* WechatShortVideo_scan_focus@2x.png in Resources */,
 				6CD118161FC40A1700D7C58C /* AlipaySDK.bundle in Resources */,
 				6CDED4FE1FAB1EB300021F53 /* Main.storyboard in Resources */,
+				6C261EB320187C0200AA9691 /* close_btn@2x.png in Resources */,
 				6CD2C0A91FD040950035EB2E /* Place.plist in Resources */,
 				6CD2C1341FD151C30035EB2E /* WechatShortVideoController.xib in Resources */,
 				6CD2C12C1FD151C30035EB2E /* WechatShortVideo_close.png in Resources */,
+				6C261EB420187C0200AA9691 /* redpacket_bg@2x.png in Resources */,
 				6CD2C12B1FD151C30035EB2E /* WechatShortVideo_37x-Checkmark@2x.png in Resources */,
 				6CD2C12D1FD151C30035EB2E /* WechatShortVideo_close@2x.png in Resources */,
 				6CD2C1311FD151C30035EB2E /* WechatShortVideo_scan_focus@3x.png in Resources */,
@@ -1669,6 +1699,7 @@
 				6CD1179B1FC3E5A300D7C58C /* KKPayView.m in Sources */,
 				6CD2C10D1FD151B70035EB2E /* SCRecorderToolsView.m in Sources */,
 				6C37B22A1FD54F8000EA4AD7 /* AdaptUITableView.m in Sources */,
+				6C261EB720187C0200AA9691 /* WSRewardConfig.m in Sources */,
 				6CD2C13C1FD151CE0035EB2E /* README.mdown in Sources */,
 				6CD2C1031FD151B70035EB2E /* SCFilterImageView.m in Sources */,
 				6CDED5971FAB293600021F53 /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -1690,6 +1721,7 @@
 				6CD2C0F91FD151B70035EB2E /* NSURL+SCSaveToCameraRoll.m in Sources */,
 				6CDED58F1FAB293600021F53 /* AFURLResponseSerialization.m in Sources */,
 				6C37B2271FD54F8000EA4AD7 /* AdaptUIButton.m in Sources */,
+				6C261EB620187C0200AA9691 /* WSRedPacketView.m in Sources */,
 				6CD117961FC3E5A300D7C58C /* KKeditMessageVC.m in Sources */,
 				6CDED5A71FAB2AC700021F53 /* KKviewVC.m in Sources */,
 				6C37B2381FD54FA100EA4AD7 /* UIButton+Block.m in Sources */,
