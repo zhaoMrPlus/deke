@@ -12,6 +12,5 @@
 @property(nonatomic,strong)UITextField * KKTextfield;
 @property(nonatomic,strong)UIButton    * KKDownBtn;
 @property(nonatomic,copy)void(^surrBlock)(void);
-
 -(void)setPlaceHorlder:(NSString *)placehorlder setbuttonBackground:(UIColor *)bgcolor titleColor:(UIColor *)titColor buttonTitle:(NSString *)tit;
 @end

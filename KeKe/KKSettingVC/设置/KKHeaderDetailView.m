@@ -34,6 +34,7 @@
     [self.editButton setBackgroundColor:[UIColor mainGrayColor]];
     [self.editButton addTarget:self action:@selector(editClick) forControlEvents:UIControlEventTouchUpInside];
 
+    
     [self addSubview:self.editButton];
     [self addSubview:self.nameLabel];
     [self addSubview:self.headButton];

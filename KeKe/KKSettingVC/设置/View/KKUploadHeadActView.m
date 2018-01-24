@@ -64,6 +64,7 @@
         [titlebel setText:[_datasourceData objectAtIndex:indexPath.row]];
         [titlebel setFont:[UIFont fontWithName:@"PingFangSC-Light" size:16]];
     }
+
     if (indexPath.row == 2) {
         titlebel.hidden = YES;
         UILabel * line =[[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 10)];
@@ -78,6 +79,7 @@
     }
     return cell;
 }
+
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return (150 / 3);
 }

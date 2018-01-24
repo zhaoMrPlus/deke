@@ -25,7 +25,9 @@
     [self showRightButtonWithTitle:@"确认" titleColor:[UIColor blackColor]];
     [self.view setBackgroundColor:[UIColor mainGrayColor]];
 }
+
 -(void)stepUI{
+    
     KKTagsView * kktag =[[KKTagsView alloc] initWithFrame:CGRectMake(0, 64 + 5, self.view.frame.size.width, 50)];
     [self.view addSubview:kktag];
     [kktag setBackgroundColor:[UIColor whiteColor]];

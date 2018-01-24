@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface KKSettingCell : UITableViewCell
 @property(nonatomic,strong)UIImageView * iconImage;
 @property(nonatomic,strong)UILabel     * titleLabel;
