@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 
 @interface KKDrysalteryVC : UIViewController
+/*--中心管理者--*/
+@property(nonatomic,strong)CBCentralManager  * cBManger;
+/*--连接外围的设备--*/
+@property(nonatomic,strong)CBPeripheral      * pheral;
 
 @end

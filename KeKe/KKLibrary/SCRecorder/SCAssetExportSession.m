@@ -658,7 +658,7 @@ static CGContextRef SCCreateContextFromPixelBuffer(CVPixelBufferRef pixelBuffer)
         [self callCompletionHandler:completionHandler];
         return;
     }
-
+#warning ----警告----
     if (![_reader startReading]) {
         EnsureSuccess(_reader.error, completionHandler);
     }
