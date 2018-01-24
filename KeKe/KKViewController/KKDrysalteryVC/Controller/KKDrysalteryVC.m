@@ -152,7 +152,6 @@
     
     for (CBCharacteristic *cha in service.characteristics) {
         //NSLog(@"%s, line = %d, char = %@", __FUNCTION__, __LINE__, cha);
-        
     }
 }
 

@@ -18,11 +18,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //传感器篇
     [self showRightButtonWithImage:[UIImage imageNamed:@"homepage_icon_set"]
                        andHigImage:[UIImage imageNamed:@"homepage_icon_set"]];
     [self showBackButtonWithImage:@"homepage_icon_message"];
     [self.view setBackgroundColor:UIColorFromRGB(0x33FFFF)];
+    [self CreateSensor];
 
+}
+-(void)CreateSensor{
+    [UIDevice currentDevice].proximityMonitoringEnabled = YES;
+    //监听有物品离开还是靠近
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(proximityStateDidChange) name:UIDeviceProximityStateDidChangeNotification object:nil];
+}
+
+-(void)proximityStateDidChange{
+    if ([UIDevice currentDevice].proximityState) {
+        NSLog(@"靠近");
+    }else{
+        NSLog(@"离开");
+
+    }
 }
 
 -(void)rightBarButtonPressed:(id)sender{
