@@ -22,3 +22,4 @@
     [super setFrame:AdaptCGRectMake(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height)];
 }
 @end
+ 

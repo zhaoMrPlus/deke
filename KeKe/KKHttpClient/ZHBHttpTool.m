@@ -4,15 +4,12 @@
 //
 //  Created by 毛蛋 on 2017/11/2.
 //  Copyright © 2017年 zhb. All rights reserved.
-//
-
 #import "ZHBHttpTool.h"
 static ZHBHttpTool * tool;
 @interface ZHBHttpTool ()<NSURLSessionDelegate>
 {
     NSURLSession * session;
 }
-
 @end
 @implementation ZHBHttpTool
 
@@ -23,7 +20,7 @@ static ZHBHttpTool * tool;
     });
     return tool;
 }
-
+ 
 + (void)requestWithMethod:(NSString *)method
                       url:(NSString *)url
                httpHeader:(NSDictionary *)headerDic
@@ -38,7 +35,6 @@ static ZHBHttpTool * tool;
     if (method) {
         req.HTTPMethod = method;
     }
-    
     //判断请求体
     if (bodyType == ZHBHttpToolBodyType_textPlain) {
         //请求体
@@ -58,6 +54,7 @@ static ZHBHttpTool * tool;
         if (headerDic) {
             req.allHTTPHeaderFields = headerDic;
         }
+        
     } else if (bodyType == ZHBHttpToolBodyType_jsonData) {
         //请求体
         if (bodyDic) {
@@ -70,7 +67,6 @@ static ZHBHttpTool * tool;
                 return;
             }
         }
-        
         //请求头
         NSMutableDictionary * hDic = [NSMutableDictionary dictionaryWithDictionary:@{@"Content-Type":@"application/json"}];
         if (headerDic) {

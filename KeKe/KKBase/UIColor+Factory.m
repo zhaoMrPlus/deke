@@ -17,7 +17,6 @@
 + (UIColor *)searchBgColor {
     return RGBCOLOR(81, 141, 120);
 }
-
 + (UIColor *)mainGreenColor {
     return UIColorFromRGB(0xebebeb);
 }

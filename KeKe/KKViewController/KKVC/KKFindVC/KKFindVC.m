@@ -20,6 +20,7 @@
     NSTimer *countDownTimer;
     NSString *paceStr;
 }
+
 @end
 
 @implementation KKFindVC
@@ -30,8 +31,8 @@
                        andHigImage:[UIImage imageNamed:@"homepage_icon_set"]];
     [self showBackButtonWithImage:@"homepage_icon_message"];
     [self.view setBackgroundColor:UIColorFromRGB(0x0099FF)];
-    [self createUI];
-    [self createPace];
+//    [self createUI];
+//    [self createPace];
 }
 -(void)createUI{
     
@@ -116,7 +117,9 @@
         paceStr = [numberFormatter stringFromNumber:pedometerData.numberOfSteps];
     }];
 }
-/*
+
+
+/*M
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation

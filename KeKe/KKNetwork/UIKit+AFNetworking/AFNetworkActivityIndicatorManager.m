@@ -20,7 +20,6 @@
 // THE SOFTWARE.
 
 #import "AFNetworkActivityIndicatorManager.h"
-
 #if defined(__IPHONE_OS_VERSION_MAX_ALLOWED)
 
 #import "AFHTTPRequestOperation.h"

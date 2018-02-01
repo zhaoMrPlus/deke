@@ -85,7 +85,7 @@ failedBlock:(void(^)(NSError * httpError))failedBlock;
  json转对象
  */
 + (id)jsonToObject:(NSString *)jsonString;
-
+ 
 /**
  对象转json字符串
  */

@@ -28,7 +28,7 @@
         self.titleLabel.font  = [UIFont fontAdaptSize:self.titleLabel.font.pointSize];
          UIEdgeInsets edge = super.titleEdgeInsets;
         self.titleEdgeInsets = AdaptUIEdgeInsetsMake(edge.top, edge.left, edge.bottom, edge.right);
-        
+         
 //        UIEdgeInsets imageEdge = super.titleEdgeInsets;
 //        
 //        self.imageEdgeInsets = UIEdgeInsetsMake(imageEdge.top*self.adaptFactor, imageEdge.left*self.adaptFactor, imageEdge.bottom*self.adaptFactor, imageEdge.right*adaptFactor);

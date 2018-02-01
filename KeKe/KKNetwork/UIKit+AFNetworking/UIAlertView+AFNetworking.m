@@ -22,7 +22,6 @@
 #import "UIAlertView+AFNetworking.h"
 
 #if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
-
 #import "AFURLConnectionOperation.h"
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
