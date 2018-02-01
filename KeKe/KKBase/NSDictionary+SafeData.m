@@ -24,6 +24,7 @@
         object = nil;
     }
     return object;
+    
 }
 - (NSDictionary*)dictionarySafeForKey:(NSString*)key
 {

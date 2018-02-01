@@ -125,7 +125,6 @@
         }
     };
 }
-
 -(void)sendVerify{
     //    60s的倒计时
     NSTimeInterval aMinutes = 60;

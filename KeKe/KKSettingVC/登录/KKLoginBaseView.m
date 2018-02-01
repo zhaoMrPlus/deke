@@ -25,7 +25,6 @@
                                action:@selector(login)
                      forControlEvents:UIControlEventTouchUpInside];
         self.KKLoginButton.titleLabel.font=[UIFont fontWithName:@"PingFangSC-Light" size:15];
-        
         //word
         self.KKWordlabel = [[UILabel alloc] init];
         [self addSubview:self.KKWordlabel];

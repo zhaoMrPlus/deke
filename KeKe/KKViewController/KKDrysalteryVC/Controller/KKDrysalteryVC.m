@@ -26,10 +26,7 @@
     [self showRightButtonWithImage:[UIImage imageNamed:@"homepage_icon_set"]
                        andHigImage:[UIImage imageNamed:@"homepage_icon_set"]];
     [self showBackButtonWithImage:@"homepage_icon_message"];
-    
-    
     [self CBger];
-    
 }
 //建立一个Central Manager实例进行蓝牙管理
 -(CBCentralManager *)CBger{
@@ -73,13 +70,11 @@
         default:
             break;
     }
-    
 }
 
 //发现外围设备后调的方法
 -(void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *,id> *)advertisementData RSSI:(NSNumber *)RSSI{
     //NSLog(@"%s, line = %d, cetral = %@,peripheral = %@, advertisementData = %@, RSSI = %@", __FUNCTION__, __LINE__, central, peripheral, advertisementData, RSSI);
-    
     /*
      peripheral = <CBPeripheral: 0x166668f0 identifier = C69010E7-EB75-E078-FFB4-421B4B951341, Name = "OBand-75", state = disconnected>, advertisementData = {
      kCBAdvDataChannel = 38;
@@ -92,9 +87,7 @@
      kCBAdvDataTxPowerLevel = 0;
      }, RSSI = -55
      根据打印结果,我们可以得到运动手环它的名字叫 OBand-75
-     
      */
-    
     // 需要对连接到的外设进行过滤
     // 1.信号强度(40以上才连接, 80以上连接)
     // 2.通过设备名(设备字符串前缀是 OBand)
@@ -103,31 +96,24 @@
     
     if ([peripheral.name hasPrefix:@"OBand"]) {
         // 在此处对我们的 advertisementData(外设携带的广播数据) 进行一些处理
-        
         // 通常通过过滤,我们会得到一些外设,然后将外设储存到我们的可变数组中,
         // 这里由于附近只有1个运动手环, 所以我们先按1个外设进行处理
-        
         // 标记我们的外设,让他的生命周期 = vc
         self.pheral = peripheral;
         // 发现完之后就是进行连接
         [self.cBManger connectPeripheral:self.pheral options:nil];
         NSLog(@"%s, line = %d", __FUNCTION__, __LINE__);
     }
-    
-    
 }
 //连接外围设备
 -(void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral{
     NSLog(@"%s, line = %d, %@=连接成功", __FUNCTION__, __LINE__, peripheral.name);
     // 连接成功之后,可以进行服务和特征的发现
-    
     //  设置外设的代理
     self.pheral.delegate = self;
-    
     // 外设发现服务,传nil代表不过滤
     // 这里会触发外设的代理方法 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error
     [self.pheral discoverServices:nil];
-    
     
 }
 // 外设连接失败
@@ -154,7 +140,7 @@
         //NSLog(@"%s, line = %d, char = %@", __FUNCTION__, __LINE__, cha);
     }
 }
-
+  
 //6.从外围设备读数据
 
 // 更新特征的value的时候会调用 （凡是从蓝牙传过来的数据都要经过这个回调，简单的说这个方法就是你拿数据的唯一方法） 你可以判断是否

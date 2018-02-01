@@ -27,7 +27,7 @@
     } else { // IOS7之前的版本
         [self.layer renderInContext:UIGraphicsGetCurrentContext()];
     }
-    
+
     UIImage *screenshot = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return screenshot;

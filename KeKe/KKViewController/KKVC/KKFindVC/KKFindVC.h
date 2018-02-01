@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface KKFindVC : UIViewController
-{
+{    
     UILabel *label;
 }
 @end
