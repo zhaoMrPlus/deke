@@ -24,7 +24,7 @@
     [self showBackButtonWithImage:@"homepage_icon_message"];
     [self.view setBackgroundColor:UIColorFromRGB(0x33FFFF)];
     [self CreateSensor];
- 
+    
 }
 -(void)CreateSensor{
     [UIDevice currentDevice].proximityMonitoringEnabled = YES;

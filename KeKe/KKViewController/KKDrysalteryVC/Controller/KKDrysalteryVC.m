@@ -114,7 +114,6 @@
     // 外设发现服务,传nil代表不过滤
     // 这里会触发外设的代理方法 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error
     [self.pheral discoverServices:nil];
-    
 }
 // 外设连接失败
 - (void)centralManager:(CBCentralManager *)central didFailToConnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error
@@ -195,7 +194,6 @@
 [ZZBHttpHandler loadTestInfoWithTestId:nil successBlock:^(id resp) {
     NSLog(@"%@:",resp);
 } failedBlock:^(NSError *err) {
-    
 }];
 }
 -(void)rightBarButtonPressed:(id)sender{

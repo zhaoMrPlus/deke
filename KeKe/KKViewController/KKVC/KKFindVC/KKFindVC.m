@@ -100,6 +100,7 @@
 }
 -(void)backBarButtonPressed:(id)sender{
     NSLog(@"click left");
+    
 }
 //测步数
 -(void)createPace{
@@ -108,7 +109,6 @@
         return;
     }
     CMPedometer *stepCounter = [[CMPedometer alloc] init];
-    
 //开始记步 获取采样数据
     [stepCounter startPedometerUpdatesFromDate:[NSDate date] withHandler:^(CMPedometerData * _Nullable pedometerData, NSError * _Nullable error) {
         //获取采样数据
