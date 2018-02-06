@@ -60,9 +60,7 @@
 
         
     }
-
-    
-    
+   
     for (int index = 0; index < 3; index ++) {
         self.KKLineLabel = [[UILabel alloc] init];
         [self addSubview:self.KKLineLabel];
@@ -76,7 +74,6 @@
                                                    self.KKWordlabel.bottom-(self.KKWordlabel.height) / 2,
                                                    ((self.frame.size.width-70) / 2 - 24 -40),
                                                    .5);
-                
                 break;
             }
             case 2:{
@@ -84,13 +81,11 @@
                                                    self.KKWordlabel.bottom-(self.KKWordlabel.height) / 2,
                                                    ((self.frame.size.width-70) / 2 - 24 -40),
                                                    .5);
-                
                 break;
             }
             default:
                 break;
         }
-
     }
 }
 -(void)login{

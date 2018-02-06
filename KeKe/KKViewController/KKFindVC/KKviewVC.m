@@ -24,14 +24,12 @@
     [self showBackButtonWithImage:@"homepage_icon_message"];
     [self.view setBackgroundColor:UIColorFromRGB(0x33FFFF)];
     [self CreateSensor];
-    
 }
 -(void)CreateSensor{
     [UIDevice currentDevice].proximityMonitoringEnabled = YES;
     //监听有物品离开还是靠近
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(proximityStateDidChange) name:UIDeviceProximityStateDidChangeNotification object:nil];
 }
-
 -(void)proximityStateDidChange{
     if ([UIDevice currentDevice].proximityState) {
         NSLog(@"靠近");
@@ -41,7 +39,6 @@
         NSLog(@"离开");
         UIAlertView *ac=[[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"离开了" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
         [ac show];
-
     }
 }
 

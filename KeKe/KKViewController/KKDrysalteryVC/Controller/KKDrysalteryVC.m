@@ -126,20 +126,15 @@
 {
     NSLog(@"%s, line = %d, %@=断开连接", __FUNCTION__, __LINE__, peripheral.name);
 }
-
-
 //4.获得外围设备的服务 & 5.获得服务的特征
-
 // 发现外设服务里的特征的时候调用的代理方法(这个是比较重要的方法，你在这里可以通过事先知道UUID找到你需要的特征，订阅特征，或者这里写入数据给特征也可以)
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(NSError *)error
 {
     NSLog(@"%s, line = %d", __FUNCTION__, __LINE__);
-    
     for (CBCharacteristic *cha in service.characteristics) {
         //NSLog(@"%s, line = %d, char = %@", __FUNCTION__, __LINE__, cha);
     }
 }
-  
 //6.从外围设备读数据
 
 // 更新特征的value的时候会调用 （凡是从蓝牙传过来的数据都要经过这个回调，简单的说这个方法就是你拿数据的唯一方法） 你可以判断是否
@@ -150,7 +145,6 @@
         //characteristic.value就是你要的数据
     }
 }
-
 //7.给外围设备发送数据（也就是写入数据到蓝牙）
 //这个方法你可以放在button的响应里面，也可以在找到特征的时候就写入，具体看你业务需求怎么用啦
 

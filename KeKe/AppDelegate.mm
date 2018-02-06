@@ -28,7 +28,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = [[KKLoginVC alloc]init];
     [self changeNavigationBar];
-    
     /*
      引导页
      */

@@ -100,7 +100,6 @@
 }
 -(void)backBarButtonPressed:(id)sender{
     NSLog(@"click left");
-    
 }
 //测步数
 -(void)createPace{
@@ -118,8 +117,8 @@
     }];
 }
 
-
 /*M
+ 
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
