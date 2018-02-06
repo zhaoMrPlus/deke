@@ -18,7 +18,6 @@
         self.provinceName = @"";
         self.cityArray = [NSMutableArray array];
         self.districtArray = [NSMutableArray array];
-        
     }
     return self;
 }

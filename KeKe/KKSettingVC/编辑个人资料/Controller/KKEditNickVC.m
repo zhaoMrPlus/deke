@@ -5,18 +5,13 @@
 //  Created by 毛蛋 on 2017/11/30.
 //  Copyright © 2017年 zhb. All rights reserved.
 //
-
 #import "KKEditNickVC.h"
 #import "UIColor+Factory.h"
 #import "UIView+RMAdditions.h"
 #import "UIViewController+YCCommon.h"
-
 @interface KKEditNickVC ()
-
 @end
-
 @implementation KKEditNickVC
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setTitle:@"昵称"];
@@ -49,18 +44,15 @@
 -(void)backBarButtonPressed:(id)sender{
     [self.navigationController popViewControllerAnimated:YES];
 }
-
 -(void)rightBarButtonPressed:(id)sender{
     
         [_delegate sendValue:textfield.text];
         [self.navigationController popViewControllerAnimated:YES];
-
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 /*
 #pragma mark - Navigation
 
@@ -70,5 +62,4 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 @end

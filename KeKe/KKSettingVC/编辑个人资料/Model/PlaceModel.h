@@ -14,7 +14,5 @@
 @property (nonatomic, strong) NSString *provinceName;
 @property (nonatomic, strong) NSMutableArray *cityArray;
 @property (nonatomic, strong) NSMutableArray *districtArray;
-
-
 @end
 

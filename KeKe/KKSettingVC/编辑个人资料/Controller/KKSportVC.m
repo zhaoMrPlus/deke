@@ -53,7 +53,6 @@
 -(void)rightBarButtonPressed:(id)sender{
     [_delegate4 sendValue4:textfield.text];
     [self.navigationController popViewControllerAnimated:YES];
-    
 }/*
   #pragma mark - Navigation
   
