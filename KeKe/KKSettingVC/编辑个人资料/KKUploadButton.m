@@ -21,7 +21,6 @@
     
     [self addSubview:self.label];
     [self addSubview:self.icon];
-    
 }
 -(void)layoutSubviews{
     self.icon.frame = CGRectMake((self.width - 30) / 2, (self.height - 30) /2, 30, 30);
