@@ -58,7 +58,6 @@
                         forControlEvents:UIControlEventTouchUpInside];
         self.KKQQWechatButton.frame = CGRectMake((self.frame.size.width)/2- 76 +i *(40+76), self.KKWordlabel.bottom + 14, 40, 40);
 
-        
     }
    
     for (int index = 0; index < 3; index ++) {

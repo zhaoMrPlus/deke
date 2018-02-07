@@ -125,8 +125,6 @@
         }
         
     }
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:strTitle message:strMsg delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-    [alert show];
 }
 
 //9.0前的方法，为了适配低版本 保留

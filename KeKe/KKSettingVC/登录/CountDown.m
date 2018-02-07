@@ -27,7 +27,6 @@
     }
     return self;
 }
-
 -(void)countDownWithStratDate:(NSDate *)startDate finishDate:(NSDate *)finishDate completeBlock:(void (^)(NSInteger day,NSInteger hour,NSInteger minute,NSInteger second))completeBlock{
     if (_timer==nil) {
         

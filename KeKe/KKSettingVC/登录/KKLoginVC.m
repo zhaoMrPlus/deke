@@ -128,18 +128,12 @@
 -(void)sendVerify{
     //    60s的倒计时
     NSTimeInterval aMinutes = 60;
-    //    NSTimeInterval aDay = 24*60*60;
     [self startWithStartDate:[NSDate date] finishDate:[NSDate dateWithTimeIntervalSinceNow:aMinutes]];
 }
 -(void)login{
-//    if ([_KKuserName.text isEqualToString: @"1"]) {
         KBTabbarController *tabbar = [[KBTabbarController alloc] init];
     [self presentViewController:tabbar animated:YES completion:^{
     }];
-//    }
-//    else{
-//        return;
-//    }
 }
 -(void)QQLogin{
 

@@ -116,7 +116,6 @@
         paceStr = [numberFormatter stringFromNumber:pedometerData.numberOfSteps];
     }];
 }
-
 /*M
  
 #pragma mark - Navigation

@@ -26,7 +26,6 @@
 -(void)layoutSubviews{
     self.icon.frame = CGRectMake((self.width - 30) / 2, (self.height - 30) /2, 30, 30);
     self.label.frame = CGRectMake(0, self.icon.bottom + 17, self.width, 30);
-
 }
 
 /*

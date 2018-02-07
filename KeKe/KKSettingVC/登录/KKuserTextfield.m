@@ -32,5 +32,4 @@
     CGRect inset = CGRectMake(bounds.origin.x + 40, bounds.origin.y, bounds.size.width - 35, bounds.size.height);//更好理解些
     return inset;
 }
-
 @end
