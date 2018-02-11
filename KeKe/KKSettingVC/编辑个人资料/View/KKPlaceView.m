@@ -343,9 +343,13 @@
         NSString *title = NSLocalizedString(@"未选择地区", nil);
         NSString *message = NSLocalizedString(@"请您选择或者更改地区后再点击确定。", nil);
         NSString *OKButtonTitle = NSLocalizedString(@"OK", nil);
-        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:title
+                                                                         message:message
+                                                                  preferredStyle:UIAlertControllerStyleAlert];
         
-        UIAlertAction *OKAction = [UIAlertAction actionWithTitle:OKButtonTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        UIAlertAction *OKAction = [UIAlertAction actionWithTitle:OKButtonTitle
+                                                           style:UIAlertActionStyleDefault
+                                                         handler:^(UIAlertAction *action) {
             
         }];
         [alertVC addAction:OKAction];
