@@ -54,7 +54,6 @@
     
     [_delegate1 sendValue1:textfield.text];
     [self.navigationController popViewControllerAnimated:YES];
-    
 }/*
 #pragma mark - Navigation
 // In a storyboard-based application, you will often want to do a little preparation before navigation

@@ -69,7 +69,6 @@
     }
 }
 -(void)bigClick{
-    
     if (_bigBlock) {
         _bigBlock();
     }

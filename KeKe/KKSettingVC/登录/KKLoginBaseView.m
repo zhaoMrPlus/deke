@@ -48,7 +48,6 @@
     
     NSArray *imageArr=@[@"login_icon_qq",@"login_icon_weixin"];
     for (int i = 0; i < [imageArr count]; i ++) {
-        
         type = i;
         self.KKQQWechatButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [self addSubview:self.KKQQWechatButton];

@@ -13,7 +13,6 @@
 #import <CoreBluetooth/CoreBluetooth.h>
 //蓝牙开发必须遵守的代理
 @interface KKDrysalteryVC ()<CBCentralManagerDelegate,CBPeripheralDelegate>
-
 @end
 
 @implementation KKDrysalteryVC

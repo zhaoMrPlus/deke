@@ -176,7 +176,6 @@
     
     [UIView commitAnimations];
 }
-
 #pragma mark -屏幕恢复
 
 - (void)textFieldChange:(NSNotification *)notice{
