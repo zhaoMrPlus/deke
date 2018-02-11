@@ -327,13 +327,11 @@
 
 - (void)YesClickDown{
     
-    
     // 存下当前选择的地区
     if(self.isRecordLocation){
         
         [[NSUserDefaults standardUserDefaults] setObject:self.saveArray forKey:@"saveArray"];
     }
-    
     if(self.selectArray){
         
         _sendPlaceArray(self.selectArray);
