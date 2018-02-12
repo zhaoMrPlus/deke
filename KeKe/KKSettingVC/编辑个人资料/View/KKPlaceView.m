@@ -322,7 +322,7 @@
         
         [self removeFromSuperview];
     }];
-
+    
 }
 
 - (void)YesClickDown{
