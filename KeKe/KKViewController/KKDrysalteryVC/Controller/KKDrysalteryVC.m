@@ -172,16 +172,11 @@
      */
     //    NSLog(@"%s, line = %d, char.pro = %d", __FUNCTION__, __LINE__, characteristic.properties);
     // 此时由于枚举属性是NS_OPTIONS,所以一个枚举可能对应多个类型,所以判断不能用 = ,而应该用包含&
+    
 }
-
-
-
-
-
 /**
  exp: getData
  */
-
 -(void)getData{
 
 [ZZBHttpHandler loadTestInfoWithTestId:nil successBlock:^(id resp) {
