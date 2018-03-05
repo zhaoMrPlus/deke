@@ -14,7 +14,6 @@
 -(instancetype)initWithFrame:(CGRect)frame{
     self=[super initWithFrame:frame];
     if (self) {
-
         //login
          self.KKLoginButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [self addSubview:self.KKLoginButton];

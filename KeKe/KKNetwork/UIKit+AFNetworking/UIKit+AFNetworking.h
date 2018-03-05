@@ -26,7 +26,6 @@
     #define _UIKIT_AFNETWORKING_
 
     #import "AFNetworkActivityIndicatorManager.h"
-
     #import "UIActivityIndicatorView+AFNetworking.h"
     #import "UIAlertView+AFNetworking.h"
     #import "UIButton+AFNetworking.h"

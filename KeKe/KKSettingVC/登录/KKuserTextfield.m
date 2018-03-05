@@ -16,7 +16,6 @@
     [self.iconimage setImage:iconImage];
     self.placeholder = plachorler;
     [self addSubview:self.iconimage];
-    
 }
 // 修改文本展示区域，一般跟editingRectForBounds一起重写
 - (CGRect)textRectForBounds:(CGRect)bounds

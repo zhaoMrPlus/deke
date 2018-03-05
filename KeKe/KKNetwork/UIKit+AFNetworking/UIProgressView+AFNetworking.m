@@ -20,7 +20,6 @@
 // THE SOFTWARE.
 
 #import "UIProgressView+AFNetworking.h"
-
 #import <objc/runtime.h>
 
 #if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
@@ -81,7 +80,6 @@ static void * AFTaskCountOfBytesReceivedContext = &AFTaskCountOfBytesReceivedCon
 
     [self af_setUploadProgressAnimated:animated];
 }
-
 - (void)setProgressWithDownloadProgressOfTask:(NSURLSessionDownloadTask *)task
                                      animated:(BOOL)animated
 {

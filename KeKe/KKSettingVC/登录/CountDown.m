@@ -12,9 +12,7 @@
 @interface CountDown ()
 @property(nonatomic,retain) dispatch_source_t timer;
 @property(nonatomic,retain) NSDateFormatter *dateFormatter;
-
 @end
-
 @implementation CountDown
 - (instancetype)init
 {

@@ -17,7 +17,6 @@
 #import "WXApi.h"
 #define KScreenW [[UIScreen mainScreen] bounds].size.width
 #define KScreenH [[UIScreen mainScreen] bounds].size.height
-
 @interface KKLoginVC ()<UITextFieldDelegate,WXApiDelegate>
 @end
 

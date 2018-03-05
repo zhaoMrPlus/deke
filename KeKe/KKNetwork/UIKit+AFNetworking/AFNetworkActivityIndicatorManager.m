@@ -40,7 +40,6 @@ static NSURLRequest * AFNetworkRequestFromNotification(NSNotification *notificat
         return [(NSURLSessionTask *)[notification object] originalRequest];
     }
 #endif
-
     return nil;
 }
 

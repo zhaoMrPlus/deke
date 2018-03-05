@@ -19,7 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     KKDrysalteryVC *DrysalteryVC = [[KKDrysalteryVC alloc] init];
     [self addChildController:DrysalteryVC title:@"干货" imageName:@"icon_ganhuo_default" selectedImageName:@"icon_ganhuo_selected" navVc:[UINavigationController class]];
 
@@ -29,7 +28,6 @@
     
     KKFindVC *FindVC = [[KKFindVC alloc] init];
     [self addChildController:FindVC title:@"发现" imageName:@"icon_faxian_default" selectedImageName:@"icon_faxian_selected" navVc:[UINavigationController class]];
-    
     
     [[UITabBar appearance] setBackgroundImage:[self imageWithColor:[UIColor whiteColor]]];
     //  设置tabbar

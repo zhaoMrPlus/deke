@@ -218,7 +218,6 @@ failedBlock:(void(^)(NSError * httpError))failedBlock {
 + (NSInteger)nowTimeInterval {
     return @([[NSDate date] timeIntervalSince1970]).integerValue;
 }
-
 #pragma mark - NSURLSessionDataDelegate
 //只要请求的地址是HTTPS的, 就会调用这个代理方法
 //challenge:质询

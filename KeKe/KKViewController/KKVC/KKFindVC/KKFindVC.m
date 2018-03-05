@@ -15,12 +15,10 @@
 #import "WSRedPacketView.h"
 @interface KKFindVC ()<UIAccelerometerDelegate>
 {
-    
     NSInteger secondsCountDown;//步数总时长
     NSTimer *countDownTimer;
     NSString *paceStr;
 }
-
 @end
 
 @implementation KKFindVC
