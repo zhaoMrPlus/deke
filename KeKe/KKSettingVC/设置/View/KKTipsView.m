@@ -36,7 +36,6 @@
         [self.button addTarget:self action:@selector(tagButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.button];
     }
-    
 }
 /**
  * 单选

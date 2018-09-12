@@ -227,7 +227,6 @@
             return hv3;
             break;
         }
-            
         default:
             break;
     }

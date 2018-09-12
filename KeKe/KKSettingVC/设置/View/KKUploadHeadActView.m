@@ -40,12 +40,9 @@
                                      150);
         }];
         [self datasourceData];
-        
     }
     return self;
-    
 }
-
 #pragma mark ---delegate-datasources--
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;

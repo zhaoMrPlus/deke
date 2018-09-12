@@ -24,7 +24,6 @@
         [_cellLine setBackgroundColor:[UIColor grayColor]];
         [_cellLine setAlpha:0.3];
         
-
         [self addSubview:_cellLine];
         [self addSubview:_iconImage];
         [self addSubview:_titleLabel];
@@ -50,7 +49,6 @@
                                 self.width - _titleLabel.width,
                                 .5);
 }
-
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code

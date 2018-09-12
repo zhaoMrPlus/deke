@@ -105,7 +105,7 @@
 }
 
 
-- (instancetype)init
+- (instancetype)initWithFrame:(CGRect)frame
 {
     
     self = [super initWithFrame:[UIApplication sharedApplication].keyWindow.frame];
@@ -133,7 +133,7 @@
         [yesBtn addTarget:self action:@selector(YesClickDown) forControlEvents:UIControlEventTouchUpInside];
         
         
-        _pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, topV.bottom, self.frame.size.width, 207)];
+        _pickerView = [[UIPickerView alloc] initWithFrame:CGRectMake(0, 100, 100, 207)];
         _pickerView.dataSource = self;
         _pickerView.delegate = self;
         _pickerView.backgroundColor = [UIColor whiteColor];
@@ -165,22 +165,22 @@
             
             UILabel *label = (UILabel *)[_pickerView viewForRow:yearIndex forComponent:0];
             label.textColor = [UIColor grayColor];
-            label.font = [UIFont fontWithName:@"PingFangSC-Light" size:16];
+            label.font = [UIFont fontWithName:@"PingFangSC-Light" size:12];
             
             label = (UILabel *)[_pickerView viewForRow:monthIndex forComponent:1];
             label.textColor = [UIColor grayColor];
-            label.font = [UIFont fontWithName:@"PingFangSC-Light" size:16];
+            label.font = [UIFont fontWithName:@"PingFangSC-Light" size:12];
             
             label = (UILabel *)[_pickerView viewForRow:dayIndex forComponent:2];
             label.textColor = [UIColor grayColor];
-            label.font = [UIFont fontWithName:@"PingFangSC-Light" size:16];
+            label.font = [UIFont fontWithName:@"PingFangSC-Light" size:12];
             
         });
         
         [UIView animateWithDuration:0.25 animations:^{
             
             topV.frame = CGRectMake(0, self.frame.size.height - 247, self.frame.size.width, 40);
-            _pickerView.frame = CGRectMake(0, topV.bottom, self.frame.size.width, 207);
+            _pickerView.frame = CGRectMake(0, 100, 100, 207);
         }];
         
     }
@@ -308,7 +308,7 @@
 - (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
 {
     //设置文字的属性
-    UILabel *genderLabel = [[UILabel alloc] init];
+    UILabel *genderLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 20)];
     genderLabel.textAlignment = NSTextAlignmentCenter;
     genderLabel.textColor = [UIColor grayColor];
     genderLabel.font = [UIFont fontWithName:@"PingFangSC-Light" size:16];

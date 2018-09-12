@@ -295,11 +295,10 @@
                         [_myTable reloadData];
                     };
                     [[UIApplication sharedApplication].keyWindow addSubview:selectSex];
-
                     break;
                 }
                 case 2:{
-                    KKSelectTimeView *selectTimeV = [[KKSelectTimeView alloc] init];
+                    KKSelectTimeView *selectTimeV = [[KKSelectTimeView alloc] initWithFrame:CGRectMake(0, 100, 200, 100)];
                     
                     selectTimeV.block = ^(NSString *timeStr) {
                         

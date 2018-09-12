@@ -78,7 +78,6 @@
         _KKuserName.tintColor=UIColorFromRGB(0x2bdcff);
         self.KKuserName.autoresizingMask = UIViewAutoresizingFlexibleTopMargin
         | UIViewAutoresizingFlexibleRightMargin;
-
     }
     //倒计时按钮
     _countDownForBtn = [[CountDown alloc] init];
