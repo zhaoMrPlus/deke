@@ -190,7 +190,7 @@
             singleLine.backgroundColor = [UIColor grayColor];
             singleLine.alpha= 0.5;
         }
-    }
+    }    
     //设置文字的属性
     UILabel *genderLabel = [[UILabel alloc] init];
     genderLabel.textAlignment = NSTextAlignmentCenter;

@@ -17,7 +17,6 @@
 @implementation KKDrysalteryVC
 
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
     [self getData];
     [self.view setBackgroundColor:[UIColor mainGrayColor]];
