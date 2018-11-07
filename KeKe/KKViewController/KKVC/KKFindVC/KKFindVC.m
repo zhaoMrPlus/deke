@@ -20,7 +20,6 @@
     NSString *paceStr;
 }
 @end
-
 @implementation KKFindVC
 
 - (void)viewDidLoad {
