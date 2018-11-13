@@ -25,6 +25,7 @@
     [self showRightButtonWithTitle:@"保存" titleColor:UIColorFromRGB(0x2bdcff)];
     [self.view setBackgroundColor:[UIColor mainGrayColor]];
 }
+
 -(void)createUI{
     UIView *backView=[[UIView alloc] initWithFrame:CGRectMake(0, 20+64, KScreenW, 45)];
     [self.view addSubview:backView];

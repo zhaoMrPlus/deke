@@ -16,7 +16,6 @@
 @end
 
 @implementation KKProfessionVC
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setTitle:@"专业"];

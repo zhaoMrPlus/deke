@@ -26,6 +26,7 @@
 #import <CommonCrypto/CommonDigest.h>
 #import "KKSportVC.h"
 #import "KKLikeFoodVC.h"
+
 @interface KKeditMessageVC ()<ViewControllerBDelegate,kControllerDelegate,ControllerDelegate,WechatShortVideoDelegate,UIImagePickerControllerDelegate,foodControllerDelegate,SportControllerDelegate>
 @end
 @implementation KKeditMessageVC
