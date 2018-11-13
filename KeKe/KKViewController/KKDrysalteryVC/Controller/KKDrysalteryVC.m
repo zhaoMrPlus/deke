@@ -11,6 +11,16 @@
 #import "ZZBHttpHandler.h"
 #import "UIViewController+YCCommon.h"
 #import <CoreBluetooth/CoreBluetooth.h>
+
+#import "PPVideoEditController.h"
+#import "PPToast.h"
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <Photos/Photos.h>
+#import "PPVideoEditController.h"
+#import "UIStoryboard+LoadController.h"
+#import "TZImagePickerController.h"
+
+
 //蓝牙开发必须遵守的代理
 @interface KKDrysalteryVC ()<CBCentralManagerDelegate,CBPeripheralDelegate>
 @end
@@ -61,7 +71,6 @@
             [self.cBManger scanForPeripheralsWithServices:nil // 通过某些服务筛选外设
                                               options:nil]; // dict,条件
             // 搜索成功之后,会调用我们找到外设的代理方法
-            // - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI; //找到外设
         }
             break;
         default:

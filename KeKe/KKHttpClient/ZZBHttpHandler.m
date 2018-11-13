@@ -36,7 +36,7 @@ static NSString *kWZBaseUrl_user = @"http://114.215.147.43:8001/v1/";
 /**
  *  exp: kWZBaseUrl：域名  后面是接口名，两者拼接， requiredArgs：必传参数  otherArgs：选传参数
  */
- 
+
 + (void)loadTestInfoWithTestId:(NSString *)testId
                   successBlock:(void(^)(id resp))sb
                    failedBlock:(void(^)(NSError * err))fb{

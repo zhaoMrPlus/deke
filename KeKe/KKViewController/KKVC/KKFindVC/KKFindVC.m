@@ -28,8 +28,6 @@
                        andHigImage:[UIImage imageNamed:@"homepage_icon_set"]];
     [self showBackButtonWithImage:@"homepage_icon_message"];
     [self.view setBackgroundColor:UIColorFromRGB(0x0099FF)];
-//    [self createUI];
-//    [self createPace];
 }
 -(void)createUI{
     
@@ -49,12 +47,10 @@
                                                    repeats:YES];
 }
 -(void)down{
-
     secondsCountDown --;
     if (secondsCountDown == 0) {
     [countDownTimer invalidate];
         label.hidden = YES;
-        
         WSRewardConfig *info = ({
             WSRewardConfig *info   = [[WSRewardConfig alloc] init];
             info.money         = 100.0;
