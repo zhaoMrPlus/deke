@@ -11,23 +11,21 @@
 #import "ZZBHttpHandler.h"
 #import "UIViewController+YCCommon.h"
 #import <CoreBluetooth/CoreBluetooth.h>
-
-#import "PPVideoEditController.h"
-#import "PPToast.h"
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <Photos/Photos.h>
-#import "PPVideoEditController.h"
-#import "UIStoryboard+LoadController.h"
 #import "TZImagePickerController.h"
-
+#import "KKDryCell.h"
 
 //蓝牙开发必须遵守的代理
-@interface KKDrysalteryVC ()<CBCentralManagerDelegate,CBPeripheralDelegate>
+@interface KKDrysalteryVC ()<CBCentralManagerDelegate,CBPeripheralDelegate,UITableViewDelegate,UITableViewDataSource>
 @end
 @implementation KKDrysalteryVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [_myTabelView registerNib:[UINib nibWithNibName:@"KKDryCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+    
     [self getData];
     [self.view setBackgroundColor:[UIColor mainGrayColor]];
     [self showRightButtonWithImage:[UIImage imageNamed:@"homepage_icon_set"]
@@ -35,6 +33,26 @@
     [self showBackButtonWithImage:@"homepage_icon_message"];
     [self CBger];
 }
+- (IBAction)tapDown:(id)sender {
+    
+}
+
+#pragma --
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 10;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    KKDryCell *cell=[tableView dequeueReusableCellWithIdentifier:@"cell"];
+    
+    cell.titleLabel.text=[NSString stringWithFormat:@"%zd",indexPath.row];
+    cell.ContentLabel.text=@"新碟间谍记得季度诶大结局爹间谍";
+    return cell;
+}
+
+
 //建立一个Central Manager实例进行蓝牙管理
 -(CBCentralManager *)CBger{
     if (!_cBManger) {

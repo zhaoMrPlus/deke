@@ -14,5 +14,8 @@
 @property(nonatomic,strong)CBCentralManager  * cBManger;
 /*--连接外围的设备--*/
 @property(nonatomic,strong)CBPeripheral      * pheral;
-  
+@property (weak, nonatomic) IBOutlet UITableView *myTabelView;
+
+@property (weak, nonatomic) IBOutlet UIButton *button;
+
 @end

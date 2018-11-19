@@ -53,7 +53,30 @@
 -(void)rightBarButtonPressed:(id)sender{
     [_delegate5 sendValue5:textfield.text];
     [self.navigationController popViewControllerAnimated:YES];
-}/*
+}
+-(void)textFieldDidEndEditing:(UITextField *)textField reason:(UITextFieldDidEndEditingReason)reason{
+    
+}
+-(void)textFieldDidEndEditing:(UITextField *)textField{
+    
+}
+-(void)textFieldDidBeginEditing:(UITextField *)textField{
+    
+}
+-(BOOL)textFieldShouldClear:(UITextField *)textField{
+    
+    return YES;
+}
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    return YES;
+}
+-(void)removeObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath{
+    [textfield resignFirstResponder];
+}
+-(BOOL)respondsToSelector:(SEL)aSelector{
+    return YES;
+}
+/*
   #pragma mark - Navigation
   // In a storyboard-based application, you will often want to do a little preparation before navigation
   - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
