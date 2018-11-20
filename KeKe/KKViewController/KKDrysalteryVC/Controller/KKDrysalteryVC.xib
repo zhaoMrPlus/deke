@@ -35,12 +35,11 @@
                                     <constraint firstAttribute="height" constant="30" id="lAA-Vo-jCD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="按钮"/>
                                 <connections>
                                     <action selector="tapDown:" destination="-1" eventType="touchUpInside" id="r1i-LP-lfq"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bianji_icon_tianjia" translatesAutoresizingMaskIntoConstraints="NO" id="HhL-9P-jXh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vip_pic_vip" translatesAutoresizingMaskIntoConstraints="NO" id="HhL-9P-jXh">
                                 <rect key="frame" x="17" y="73" width="341" height="144"/>
                             </imageView>
                         </subviews>
@@ -73,6 +72,6 @@
         </view>
     </objects>
     <resources>
-        <image name="bianji_icon_tianjia" width="25" height="25"/>
+        <image name="vip_pic_vip" width="345" height="180"/>
     </resources>
 </document>

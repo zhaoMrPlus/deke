@@ -15,7 +15,7 @@
 #import <Photos/Photos.h>
 #import "TZImagePickerController.h"
 #import "KKDryCell.h"
-
+#import "KKDetailViewController.h"
 //蓝牙开发必须遵守的代理
 @interface KKDrysalteryVC ()<CBCentralManagerDelegate,CBPeripheralDelegate,UITableViewDelegate,UITableViewDataSource>
 @end
@@ -47,11 +47,10 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     KKDryCell *cell=[tableView dequeueReusableCellWithIdentifier:@"cell"];
     
-    cell.titleLabel.text=[NSString stringWithFormat:@"%zd",indexPath.row];
-    cell.ContentLabel.text=@"新碟间谍记得季度诶大结局爹间谍";
+    cell.titleLabel.text=[NSString stringWithFormat:@"今天是个好日子，星期%zd",indexPath.row];
+    cell.ContentLabel.text=@"新碟间谍记得季度诶大结局爹间谍的呢的呢";
     return cell;
 }
-
 
 //建立一个Central Manager实例进行蓝牙管理
 -(CBCentralManager *)CBger{
@@ -211,9 +210,12 @@
 }
 -(void)rightBarButtonPressed:(id)sender{
     NSLog(@"click right");
+    KKDetailViewController *vc=[[KKDetailViewController alloc]initWithNibName:@"KKDetailViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 -(void)backBarButtonPressed:(id)sender{
     NSLog(@"click left");
+    
 
 }
 - (void)didReceiveMemoryWarning {

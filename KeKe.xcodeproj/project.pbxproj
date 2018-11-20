@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C03856121A25DC300F9C4FA /* KKDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C03855F21A25DC300F9C4FA /* KKDetailViewController.m */; };
+		6C03856221A25DC300F9C4FA /* KKDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C03856021A25DC300F9C4FA /* KKDetailViewController.xib */; };
+		6C03856621A2A40A00F9C4FA /* KKDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C03856421A2A40A00F9C4FA /* KKDetailTableViewCell.m */; };
+		6C03856721A2A40A00F9C4FA /* KKDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C03856521A2A40A00F9C4FA /* KKDetailTableViewCell.xib */; };
 		6C261EB320187C0200AA9691 /* close_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C261EAC20187C0200AA9691 /* close_btn@2x.png */; };
 		6C261EB420187C0200AA9691 /* redpacket_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C261EAD20187C0200AA9691 /* redpacket_bg@2x.png */; };
 		6C261EB520187C0200AA9691 /* redpacket_open_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C261EAE20187C0200AA9691 /* redpacket_open_btn@2x.png */; };
@@ -212,6 +216,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6C03855E21A25DC300F9C4FA /* KKDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKDetailViewController.h; sourceTree = "<group>"; };
+		6C03855F21A25DC300F9C4FA /* KKDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKDetailViewController.m; sourceTree = "<group>"; };
+		6C03856021A25DC300F9C4FA /* KKDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKDetailViewController.xib; sourceTree = "<group>"; };
+		6C03856321A2A40A00F9C4FA /* KKDetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKDetailTableViewCell.h; sourceTree = "<group>"; };
+		6C03856421A2A40A00F9C4FA /* KKDetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKDetailTableViewCell.m; sourceTree = "<group>"; };
+		6C03856521A2A40A00F9C4FA /* KKDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKDetailTableViewCell.xib; sourceTree = "<group>"; };
 		6C261EAC20187C0200AA9691 /* close_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close_btn@2x.png"; sourceTree = "<group>"; };
 		6C261EAD20187C0200AA9691 /* redpacket_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redpacket_bg@2x.png"; sourceTree = "<group>"; };
 		6C261EAE20187C0200AA9691 /* redpacket_open_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redpacket_open_btn@2x.png"; sourceTree = "<group>"; };
@@ -1478,6 +1488,9 @@
 				6CDED59F1FAB2A9800021F53 /* KKDrysalteryVC.h */,
 				6CDED5A01FAB2A9800021F53 /* KKDrysalteryVC.m */,
 				6C2F053E219D090400F275C5 /* KKDrysalteryVC.xib */,
+				6C03855E21A25DC300F9C4FA /* KKDetailViewController.h */,
+				6C03855F21A25DC300F9C4FA /* KKDetailViewController.m */,
+				6C03856021A25DC300F9C4FA /* KKDetailViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1494,6 +1507,9 @@
 			children = (
 				6C2F0540219D09D800F275C5 /* KKDryCell.h */,
 				6C2F0541219D09D800F275C5 /* KKDryCell.m */,
+				6C03856321A2A40A00F9C4FA /* KKDetailTableViewCell.h */,
+				6C03856421A2A40A00F9C4FA /* KKDetailTableViewCell.m */,
+				6C03856521A2A40A00F9C4FA /* KKDetailTableViewCell.xib */,
 				6C2F0542219D09D800F275C5 /* KKDryCell.xib */,
 			);
 			path = View;
@@ -1748,6 +1764,7 @@
 				6CD2C1301FD151C30035EB2E /* WechatShortVideo_scan_focus@2x.png in Resources */,
 				6CD118161FC40A1700D7C58C /* AlipaySDK.bundle in Resources */,
 				6C2F0544219D09D800F275C5 /* KKDryCell.xib in Resources */,
+				6C03856221A25DC300F9C4FA /* KKDetailViewController.xib in Resources */,
 				6CDED4FE1FAB1EB300021F53 /* Main.storyboard in Resources */,
 				6C261EB320187C0200AA9691 /* close_btn@2x.png in Resources */,
 				6CD2C0A91FD040950035EB2E /* Place.plist in Resources */,
@@ -1758,6 +1775,7 @@
 				6CD2C12D1FD151C30035EB2E /* WechatShortVideo_close@2x.png in Resources */,
 				6CD2C1311FD151C30035EB2E /* WechatShortVideo_scan_focus@3x.png in Resources */,
 				6C9FE66A1FCD880E006A0336 /* H5Service.bundle in Resources */,
+				6C03856721A2A40A00F9C4FA /* KKDetailTableViewCell.xib in Resources */,
 				6C2F053F219D090400F275C5 /* KKDrysalteryVC.xib in Resources */,
 				6C93A8FC2199258C004C426A /* TZImagePickerController.bundle in Resources */,
 			);
@@ -1875,6 +1893,7 @@
 				6CD2C0A11FCFF1680035EB2E /* KKSelectSexView.m in Sources */,
 				6CDED58E1FAB293600021F53 /* AFURLRequestSerialization.m in Sources */,
 				6C93A8FF2199258C004C426A /* TZPhotoPickerController.m in Sources */,
+				6C03856121A25DC300F9C4FA /* KKDetailViewController.m in Sources */,
 				6CD2C0F71FD151B70035EB2E /* CIImageRendererUtils.m in Sources */,
 				6CD118201FC40A1700D7C58C /* RSADataSigner.m in Sources */,
 				6CDED58B1FAB293600021F53 /* AFNetworkReachabilityManager.m in Sources */,
@@ -1907,6 +1926,7 @@
 				6CD2C10C1FD151B70035EB2E /* SCRecorderTools.m in Sources */,
 				6C37B23A1FD54FA100EA4AD7 /* UIResponder+UIAdapt.m in Sources */,
 				6C37B2391FD54FA100EA4AD7 /* UIFont+Adapt.m in Sources */,
+				6C03856621A2A40A00F9C4FA /* KKDetailTableViewCell.m in Sources */,
 				6CD2C1001FD151B70035EB2E /* SCFilter+VideoComposition.m in Sources */,
 				6C93A9012199258C004C426A /* TZImagePickerController.m in Sources */,
 				6CD2C0FA1FD151B70035EB2E /* README.md in Sources */,
