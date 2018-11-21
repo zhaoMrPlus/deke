@@ -16,6 +16,8 @@
 #import "TZImagePickerController.h"
 #import "KKDryCell.h"
 #import "KKDetailViewController.h"
+#import "KKMysekfMainViewController.h"
+
 //蓝牙开发必须遵守的代理
 @interface KKDrysalteryVC ()<CBCentralManagerDelegate,CBPeripheralDelegate,UITableViewDelegate,UITableViewDataSource>
 @end
@@ -215,7 +217,8 @@
 }
 -(void)backBarButtonPressed:(id)sender{
     NSLog(@"click left");
-    
+    KKMysekfMainViewController *vc=[[KKMysekfMainViewController alloc] initWithNibName:@"KKMysekfMainViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
 
 }
 - (void)didReceiveMemoryWarning {
