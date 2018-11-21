@@ -9,6 +9,7 @@
 #import "KKviewVC.h"
 #import "UIColor+Factory.h"
 #import "UIViewController+YCCommon.h"
+#import "KKPushDetailViewController.h"
 
 @interface KKviewVC ()
 @end
@@ -43,6 +44,8 @@
 
 -(void)rightBarButtonPressed:(id)sender{
     NSLog(@"click right");
+    KKPushDetailViewController *vc=[[KKPushDetailViewController alloc] initWithNibName:@"KKPushDetailViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 -(void)backBarButtonPressed:(id)sender{
     NSLog(@"click left");

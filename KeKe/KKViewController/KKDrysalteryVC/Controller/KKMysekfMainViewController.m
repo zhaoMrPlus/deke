@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
-    
+    _certifiLabel.layer.cornerRadius = _certifiLabel.frame.size.height / 2;
+    _certifiLabel.clipsToBounds = YES;
     
     
     

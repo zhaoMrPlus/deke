@@ -47,6 +47,8 @@
 		6C56901F1FC59874001D897C /* KKCharactrtTagsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C56901E1FC59874001D897C /* KKCharactrtTagsVC.m */; };
 		6C5690221FC59D78001D897C /* KKTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5690211FC59D78001D897C /* KKTagsView.m */; };
 		6C5690251FC5A5B5001D897C /* KKTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5690241FC5A5B5001D897C /* KKTipsView.m */; };
+		6C8DC4F521A5465E003127CA /* KKPushDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8DC4F321A5465E003127CA /* KKPushDetailViewController.m */; };
+		6C8DC4F621A5465E003127CA /* KKPushDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8DC4F421A5465E003127CA /* KKPushDetailViewController.xib */; };
 		6C93A8F52199258C004C426A /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93A84521992588004C426A /* TZImageCropManager.m */; };
 		6C93A8F62199258C004C426A /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93A84721992588004C426A /* TZAssetCell.m */; };
 		6C93A8F72199258C004C426A /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93A84821992588004C426A /* TZVideoPlayerController.m */; };
@@ -297,6 +299,9 @@
 		6C5690211FC59D78001D897C /* KKTagsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTagsView.m; sourceTree = "<group>"; };
 		6C5690231FC5A5B5001D897C /* KKTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTipsView.h; sourceTree = "<group>"; };
 		6C5690241FC5A5B5001D897C /* KKTipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKTipsView.m; sourceTree = "<group>"; };
+		6C8DC4F221A5465E003127CA /* KKPushDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPushDetailViewController.h; sourceTree = "<group>"; };
+		6C8DC4F321A5465E003127CA /* KKPushDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPushDetailViewController.m; sourceTree = "<group>"; };
+		6C8DC4F421A5465E003127CA /* KKPushDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKPushDetailViewController.xib; sourceTree = "<group>"; };
 		6C93A84321992588004C426A /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
 		6C93A84421992588004C426A /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
 		6C93A84521992588004C426A /* TZImageCropManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageCropManager.m; sourceTree = "<group>"; };
@@ -1690,6 +1695,9 @@
 			children = (
 				6CDED5A51FAB2AC700021F53 /* KKviewVC.h */,
 				6CDED5A61FAB2AC700021F53 /* KKviewVC.m */,
+				6C8DC4F221A5465E003127CA /* KKPushDetailViewController.h */,
+				6C8DC4F321A5465E003127CA /* KKPushDetailViewController.m */,
+				6C8DC4F421A5465E003127CA /* KKPushDetailViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1829,6 +1837,7 @@
 				6C03857421A3B35100F9C4FA /* KKdetailInfoTableViewCell.xib in Resources */,
 				6CD2C0A91FD040950035EB2E /* Place.plist in Resources */,
 				6CD2C1341FD151C30035EB2E /* WechatShortVideoController.xib in Resources */,
+				6C8DC4F621A5465E003127CA /* KKPushDetailViewController.xib in Resources */,
 				6CD2C12C1FD151C30035EB2E /* WechatShortVideo_close.png in Resources */,
 				6C261EB420187C0200AA9691 /* redpacket_bg@2x.png in Resources */,
 				6CD2C12B1FD151C30035EB2E /* WechatShortVideo_37x-Checkmark@2x.png in Resources */,
@@ -1865,6 +1874,7 @@
 				6C5690251FC5A5B5001D897C /* KKTipsView.m in Sources */,
 				6C37B2291FD54F8000EA4AD7 /* AdaptUILabel.m in Sources */,
 				6CDED6061FAB42D400021F53 /* ZZBHttpHandler.m in Sources */,
+				6C8DC4F521A5465E003127CA /* KKPushDetailViewController.m in Sources */,
 				6C93A8FE2199258C004C426A /* TZImageManager.m in Sources */,
 				6CD1181D1FC40A1700D7C58C /* MD5DataSigner.m in Sources */,
 				6C37B22B1FD54F8000EA4AD7 /* AdaptUITextField.m in Sources */,

@@ -12,21 +12,18 @@
 @property (weak, nonatomic) IBOutlet UITableView *myTableview;
 
 @end
-
 @implementation KKDetailViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"干货";
     [self showBackButtonWithImage:@"icon_back"];
-    [_myTableview registerNib:[UINib nibWithNibName:@"KKDetailTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];    
+    [_myTableview registerNib:[UINib nibWithNibName:@"KKDetailTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
 }
 -(void)backBarButtonPressed:(id)sender{
     [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;

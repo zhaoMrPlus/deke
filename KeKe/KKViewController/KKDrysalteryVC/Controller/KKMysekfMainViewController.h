@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface KKMysekfMainViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *certifiLabel;
 
 @end
