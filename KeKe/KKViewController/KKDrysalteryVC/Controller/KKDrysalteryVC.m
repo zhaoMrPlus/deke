@@ -36,7 +36,7 @@
     [self CBger];
 }
 - (IBAction)tapDown:(id)sender {
-    
+    NSLog(@"xxxx");
 }
 
 #pragma --

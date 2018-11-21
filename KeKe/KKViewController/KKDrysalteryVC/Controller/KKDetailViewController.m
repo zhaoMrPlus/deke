@@ -19,8 +19,7 @@
     [super viewDidLoad];
     self.title = @"干货";
     [self showBackButtonWithImage:@"icon_back"];
-    [_myTableview registerNib:[UINib nibWithNibName:@"KKDetailTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
-    
+    [_myTableview registerNib:[UINib nibWithNibName:@"KKDetailTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];    
 }
 -(void)backBarButtonPressed:(id)sender{
     [self.navigationController popViewControllerAnimated:YES];
