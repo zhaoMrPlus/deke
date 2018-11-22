@@ -49,6 +49,8 @@
 		6C5690251FC5A5B5001D897C /* KKTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5690241FC5A5B5001D897C /* KKTipsView.m */; };
 		6C8DC4F521A5465E003127CA /* KKPushDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8DC4F321A5465E003127CA /* KKPushDetailViewController.m */; };
 		6C8DC4F621A5465E003127CA /* KKPushDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8DC4F421A5465E003127CA /* KKPushDetailViewController.xib */; };
+		6C8DC4FA21A67D3B003127CA /* KKRebuildLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8DC4F821A67D3B003127CA /* KKRebuildLoginViewController.m */; };
+		6C8DC4FB21A67D3B003127CA /* KKRebuildLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8DC4F921A67D3B003127CA /* KKRebuildLoginViewController.xib */; };
 		6C93A8F52199258C004C426A /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93A84521992588004C426A /* TZImageCropManager.m */; };
 		6C93A8F62199258C004C426A /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93A84721992588004C426A /* TZAssetCell.m */; };
 		6C93A8F72199258C004C426A /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93A84821992588004C426A /* TZVideoPlayerController.m */; };
@@ -302,6 +304,9 @@
 		6C8DC4F221A5465E003127CA /* KKPushDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKPushDetailViewController.h; sourceTree = "<group>"; };
 		6C8DC4F321A5465E003127CA /* KKPushDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPushDetailViewController.m; sourceTree = "<group>"; };
 		6C8DC4F421A5465E003127CA /* KKPushDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKPushDetailViewController.xib; sourceTree = "<group>"; };
+		6C8DC4F721A67D3B003127CA /* KKRebuildLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKRebuildLoginViewController.h; sourceTree = "<group>"; };
+		6C8DC4F821A67D3B003127CA /* KKRebuildLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKRebuildLoginViewController.m; sourceTree = "<group>"; };
+		6C8DC4F921A67D3B003127CA /* KKRebuildLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKRebuildLoginViewController.xib; sourceTree = "<group>"; };
 		6C93A84321992588004C426A /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
 		6C93A84421992588004C426A /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
 		6C93A84521992588004C426A /* TZImageCropManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageCropManager.m; sourceTree = "<group>"; };
@@ -1707,6 +1712,9 @@
 			children = (
 				6CDED5A21FAB2AAC00021F53 /* KKFindVC.h */,
 				6CDED5A31FAB2AAC00021F53 /* KKFindVC.m */,
+				6C8DC4F721A67D3B003127CA /* KKRebuildLoginViewController.h */,
+				6C8DC4F821A67D3B003127CA /* KKRebuildLoginViewController.m */,
+				6C8DC4F921A67D3B003127CA /* KKRebuildLoginViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1844,6 +1852,7 @@
 				6CD2C12D1FD151C30035EB2E /* WechatShortVideo_close@2x.png in Resources */,
 				6CD2C1311FD151C30035EB2E /* WechatShortVideo_scan_focus@3x.png in Resources */,
 				6C9FE66A1FCD880E006A0336 /* H5Service.bundle in Resources */,
+				6C8DC4FB21A67D3B003127CA /* KKRebuildLoginViewController.xib in Resources */,
 				6C03856721A2A40A00F9C4FA /* KKDetailTableViewCell.xib in Resources */,
 				6C2F053F219D090400F275C5 /* KKDrysalteryVC.xib in Resources */,
 				6C93A8FC2199258C004C426A /* TZImagePickerController.bundle in Resources */,
@@ -1926,6 +1935,7 @@
 				6CDED58D1FAB293600021F53 /* AFURLConnectionOperation.m in Sources */,
 				6CD118141FC40A1700D7C58C /* APAuthV2Info.m in Sources */,
 				6C93A8F82199258C004C426A /* TZAssetModel.m in Sources */,
+				6C8DC4FA21A67D3B003127CA /* KKRebuildLoginViewController.m in Sources */,
 				6CDED4FB1FAB1EB300021F53 /* ViewController.m in Sources */,
 				6CD2C0FB1FD151B70035EB2E /* SCAssetExportSession.m in Sources */,
 				6CD2C1121FD151B70035EB2E /* SCSwipeableFilterView.m in Sources */,

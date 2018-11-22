@@ -13,6 +13,8 @@
 #import <CoreMotion/CoreMotion.h>
 #import "WSRewardConfig.h"
 #import "WSRedPacketView.h"
+#import "KKRebuildLoginViewController.h"
+
 @interface KKFindVC ()<UIAccelerometerDelegate>
 {
     NSInteger secondsCountDown;//步数总时长
@@ -93,6 +95,10 @@
 }
 -(void)backBarButtonPressed:(id)sender{
     NSLog(@"click left");
+    KKRebuildLoginViewController *vc=[[KKRebuildLoginViewController alloc] initWithNibName:@"KKRebuildLoginViewController" bundle:nil];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+    self.hidesBottomBarWhenPushed = NO;
 }
 //测步数
 -(void)createPace{
