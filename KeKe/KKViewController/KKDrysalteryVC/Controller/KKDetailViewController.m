@@ -8,6 +8,8 @@
 
 #import "KKDetailViewController.h"
 #import "KKDetailTableViewCell.h"
+#import "KKJinPinViewController.h"
+
 @interface KKDetailViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *myTableview;
 
@@ -40,6 +42,12 @@
     cell.nameLabel.text=[NSString stringWithFormat:@"山药视频%zd",indexPath.row];
     cell.pinglunLabe.text=[NSString stringWithFormat:@"%zd",indexPath.row];
     return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    KKJinPinViewController *vc=[[KKJinPinViewController alloc] initWithNibName:@"KKJinPinViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+    self.title = @"精选";
+    
 }
 /*
 #pragma mark - Navigation

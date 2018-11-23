@@ -51,6 +51,16 @@
 		6C8DC4F621A5465E003127CA /* KKPushDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8DC4F421A5465E003127CA /* KKPushDetailViewController.xib */; };
 		6C8DC4FA21A67D3B003127CA /* KKRebuildLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8DC4F821A67D3B003127CA /* KKRebuildLoginViewController.m */; };
 		6C8DC4FB21A67D3B003127CA /* KKRebuildLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8DC4F921A67D3B003127CA /* KKRebuildLoginViewController.xib */; };
+		6C8DC4FF21A68D8C003127CA /* KKMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8DC4FD21A68D8C003127CA /* KKMusicViewController.m */; };
+		6C8DC50021A68D8C003127CA /* KKMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8DC4FE21A68D8C003127CA /* KKMusicViewController.xib */; };
+		6C8DC50421A68E98003127CA /* KKMusicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8DC50221A68E98003127CA /* KKMusicCollectionViewCell.m */; };
+		6C8DC50521A68E98003127CA /* KKMusicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8DC50321A68E98003127CA /* KKMusicCollectionViewCell.xib */; };
+		6C8DC50921A6B1BC003127CA /* KKJinPinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8DC50721A6B1BC003127CA /* KKJinPinViewController.m */; };
+		6C8DC50A21A6B1BC003127CA /* KKJinPinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8DC50821A6B1BC003127CA /* KKJinPinViewController.xib */; };
+		6C8DC50E21A6B26A003127CA /* KKJinPinTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8DC50C21A6B26A003127CA /* KKJinPinTableViewCell.m */; };
+		6C8DC50F21A6B26A003127CA /* KKJinPinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8DC50D21A6B26A003127CA /* KKJinPinTableViewCell.xib */; };
+		6C8DC51321A795AC003127CA /* KKJinPinDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8DC51121A795AC003127CA /* KKJinPinDetailViewController.m */; };
+		6C8DC51421A795AC003127CA /* KKJinPinDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8DC51221A795AC003127CA /* KKJinPinDetailViewController.xib */; };
 		6C93A8F52199258C004C426A /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93A84521992588004C426A /* TZImageCropManager.m */; };
 		6C93A8F62199258C004C426A /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93A84721992588004C426A /* TZAssetCell.m */; };
 		6C93A8F72199258C004C426A /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93A84821992588004C426A /* TZVideoPlayerController.m */; };
@@ -307,6 +317,21 @@
 		6C8DC4F721A67D3B003127CA /* KKRebuildLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKRebuildLoginViewController.h; sourceTree = "<group>"; };
 		6C8DC4F821A67D3B003127CA /* KKRebuildLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKRebuildLoginViewController.m; sourceTree = "<group>"; };
 		6C8DC4F921A67D3B003127CA /* KKRebuildLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKRebuildLoginViewController.xib; sourceTree = "<group>"; };
+		6C8DC4FC21A68D8C003127CA /* KKMusicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMusicViewController.h; sourceTree = "<group>"; };
+		6C8DC4FD21A68D8C003127CA /* KKMusicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMusicViewController.m; sourceTree = "<group>"; };
+		6C8DC4FE21A68D8C003127CA /* KKMusicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKMusicViewController.xib; sourceTree = "<group>"; };
+		6C8DC50121A68E98003127CA /* KKMusicCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKMusicCollectionViewCell.h; sourceTree = "<group>"; };
+		6C8DC50221A68E98003127CA /* KKMusicCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKMusicCollectionViewCell.m; sourceTree = "<group>"; };
+		6C8DC50321A68E98003127CA /* KKMusicCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKMusicCollectionViewCell.xib; sourceTree = "<group>"; };
+		6C8DC50621A6B1BC003127CA /* KKJinPinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKJinPinViewController.h; sourceTree = "<group>"; };
+		6C8DC50721A6B1BC003127CA /* KKJinPinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKJinPinViewController.m; sourceTree = "<group>"; };
+		6C8DC50821A6B1BC003127CA /* KKJinPinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKJinPinViewController.xib; sourceTree = "<group>"; };
+		6C8DC50B21A6B26A003127CA /* KKJinPinTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKJinPinTableViewCell.h; sourceTree = "<group>"; };
+		6C8DC50C21A6B26A003127CA /* KKJinPinTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKJinPinTableViewCell.m; sourceTree = "<group>"; };
+		6C8DC50D21A6B26A003127CA /* KKJinPinTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKJinPinTableViewCell.xib; sourceTree = "<group>"; };
+		6C8DC51021A795AC003127CA /* KKJinPinDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKJinPinDetailViewController.h; sourceTree = "<group>"; };
+		6C8DC51121A795AC003127CA /* KKJinPinDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKJinPinDetailViewController.m; sourceTree = "<group>"; };
+		6C8DC51221A795AC003127CA /* KKJinPinDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKJinPinDetailViewController.xib; sourceTree = "<group>"; };
 		6C93A84321992588004C426A /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
 		6C93A84421992588004C426A /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
 		6C93A84521992588004C426A /* TZImageCropManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageCropManager.m; sourceTree = "<group>"; };
@@ -1543,6 +1568,9 @@
 		6CDED52E1FAB245C00021F53 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6C8DC51021A795AC003127CA /* KKJinPinDetailViewController.h */,
+				6C8DC51121A795AC003127CA /* KKJinPinDetailViewController.m */,
+				6C8DC51221A795AC003127CA /* KKJinPinDetailViewController.xib */,
 				6CDED59F1FAB2A9800021F53 /* KKDrysalteryVC.h */,
 				6CDED5A01FAB2A9800021F53 /* KKDrysalteryVC.m */,
 				6C2F053E219D090400F275C5 /* KKDrysalteryVC.xib */,
@@ -1555,6 +1583,12 @@
 				6C32065021A3FF550042DCE2 /* KKMysekfMainViewController.h */,
 				6C32065121A3FF550042DCE2 /* KKMysekfMainViewController.m */,
 				6C32065221A3FF550042DCE2 /* KKMysekfMainViewController.xib */,
+				6C8DC4FC21A68D8C003127CA /* KKMusicViewController.h */,
+				6C8DC4FD21A68D8C003127CA /* KKMusicViewController.m */,
+				6C8DC4FE21A68D8C003127CA /* KKMusicViewController.xib */,
+				6C8DC50621A6B1BC003127CA /* KKJinPinViewController.h */,
+				6C8DC50721A6B1BC003127CA /* KKJinPinViewController.m */,
+				6C8DC50821A6B1BC003127CA /* KKJinPinViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1578,6 +1612,12 @@
 				6C03857021A3B35100F9C4FA /* KKdetailInfoTableViewCell.h */,
 				6C03857121A3B35100F9C4FA /* KKdetailInfoTableViewCell.m */,
 				6C03857221A3B35100F9C4FA /* KKdetailInfoTableViewCell.xib */,
+				6C8DC50121A68E98003127CA /* KKMusicCollectionViewCell.h */,
+				6C8DC50221A68E98003127CA /* KKMusicCollectionViewCell.m */,
+				6C8DC50321A68E98003127CA /* KKMusicCollectionViewCell.xib */,
+				6C8DC50B21A6B26A003127CA /* KKJinPinTableViewCell.h */,
+				6C8DC50C21A6B26A003127CA /* KKJinPinTableViewCell.m */,
+				6C8DC50D21A6B26A003127CA /* KKJinPinTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1826,21 +1866,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C8DC50021A68D8C003127CA /* KKMusicViewController.xib in Resources */,
 				6C32065421A3FF550042DCE2 /* KKMysekfMainViewController.xib in Resources */,
 				6CD2C12F1FD151C30035EB2E /* WechatShortVideo_scan_focus.png in Resources */,
 				6CDED5031FAB1EB300021F53 /* LaunchScreen.storyboard in Resources */,
 				6C261EB520187C0200AA9691 /* redpacket_open_btn@2x.png in Resources */,
 				6CDED5001FAB1EB300021F53 /* Assets.xcassets in Resources */,
 				6CD2C0F81FD151B70035EB2E /* LICENSE in Resources */,
+				6C8DC51421A795AC003127CA /* KKJinPinDetailViewController.xib in Resources */,
 				6C03856C21A3A99700F9C4FA /* KKInfoDetailViewController.xib in Resources */,
 				6C9FE66B1FCD880E006A0336 /* Poseidon.bundle in Resources */,
 				6CD2C12A1FD151C30035EB2E /* WechatShortVideo_37x-Checkmark.png in Resources */,
 				6CD2C12E1FD151C30035EB2E /* WechatShortVideo_close@3x.png in Resources */,
 				6CD2C1301FD151C30035EB2E /* WechatShortVideo_scan_focus@2x.png in Resources */,
+				6C8DC50521A68E98003127CA /* KKMusicCollectionViewCell.xib in Resources */,
 				6CD118161FC40A1700D7C58C /* AlipaySDK.bundle in Resources */,
 				6C2F0544219D09D800F275C5 /* KKDryCell.xib in Resources */,
+				6C8DC50F21A6B26A003127CA /* KKJinPinTableViewCell.xib in Resources */,
 				6C03856221A25DC300F9C4FA /* KKDetailViewController.xib in Resources */,
 				6CDED4FE1FAB1EB300021F53 /* Main.storyboard in Resources */,
+				6C8DC50A21A6B1BC003127CA /* KKJinPinViewController.xib in Resources */,
 				6C261EB320187C0200AA9691 /* close_btn@2x.png in Resources */,
 				6C03857421A3B35100F9C4FA /* KKdetailInfoTableViewCell.xib in Resources */,
 				6CD2C0A91FD040950035EB2E /* Place.plist in Resources */,
@@ -1883,6 +1928,7 @@
 				6C5690251FC5A5B5001D897C /* KKTipsView.m in Sources */,
 				6C37B2291FD54F8000EA4AD7 /* AdaptUILabel.m in Sources */,
 				6CDED6061FAB42D400021F53 /* ZZBHttpHandler.m in Sources */,
+				6C8DC50421A68E98003127CA /* KKMusicCollectionViewCell.m in Sources */,
 				6C8DC4F521A5465E003127CA /* KKPushDetailViewController.m in Sources */,
 				6C93A8FE2199258C004C426A /* TZImageManager.m in Sources */,
 				6CD1181D1FC40A1700D7C58C /* MD5DataSigner.m in Sources */,
@@ -1892,6 +1938,7 @@
 				6CD2C10E1FD151B70035EB2E /* SCRecordSession.m in Sources */,
 				6CD1181E1FC40A1700D7C58C /* NSDataEx.m in Sources */,
 				6CD2C10F1FD151B70035EB2E /* SCRecordSessionSegment.m in Sources */,
+				6C8DC50E21A6B26A003127CA /* KKJinPinTableViewCell.m in Sources */,
 				6CD117AB1FC3E5EA00D7C58C /* CountDown.m in Sources */,
 				6C03857321A3B35100F9C4FA /* KKdetailInfoTableViewCell.m in Sources */,
 				6CD2C0AF1FD12B1F0035EB2E /* KKOccupationVC.m in Sources */,
@@ -1920,8 +1967,10 @@
 				6CD1179C1FC3E5A300D7C58C /* KKVipSettingVC.m in Sources */,
 				6CD2C1061FD151B70035EB2E /* SCMediaTypeConfiguration.m in Sources */,
 				6CD117981FC3E5A300D7C58C /* KKCreditVC.m in Sources */,
+				6C8DC4FF21A68D8C003127CA /* KKMusicViewController.m in Sources */,
 				6C37B23B1FD54FA100EA4AD7 /* UIView+Frame.m in Sources */,
 				6CD2C10A1FD151B70035EB2E /* SCRecorder.m in Sources */,
+				6C8DC51321A795AC003127CA /* KKJinPinDetailViewController.m in Sources */,
 				6CDED5531FAB27DD00021F53 /* NSMutableArray+Common.m in Sources */,
 				6CDED5561FAB27DD00021F53 /* UIImageView+Extent.m in Sources */,
 				6C32066321A403BC0042DCE2 /* UIView+WZZLoading.m in Sources */,
@@ -2012,6 +2061,7 @@
 				6C37B23A1FD54FA100EA4AD7 /* UIResponder+UIAdapt.m in Sources */,
 				6C32066221A403BC0042DCE2 /* WZZBaseLabel.m in Sources */,
 				6C37B2391FD54FA100EA4AD7 /* UIFont+Adapt.m in Sources */,
+				6C8DC50921A6B1BC003127CA /* KKJinPinViewController.m in Sources */,
 				6C03856621A2A40A00F9C4FA /* KKDetailTableViewCell.m in Sources */,
 				6C03856B21A3A99700F9C4FA /* KKInfoDetailViewController.m in Sources */,
 				6CD2C1001FD151B70035EB2E /* SCFilter+VideoComposition.m in Sources */,

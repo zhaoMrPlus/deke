@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KKMusicViewController">
+            <connections>
+                <outlet property="CollectionView" destination="2vW-VX-wtb" id="JCj-94-5wx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2vW-VX-wtb">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yvL-3U-hac">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="yFf-4M-CiG"/>
+                        <outlet property="delegate" destination="-1" id="Ntz-1N-cOk"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="2vW-VX-wtb" secondAttribute="bottom" id="4Ag-eR-fid"/>
+                <constraint firstItem="2vW-VX-wtb" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="4pZ-yg-bZg"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="2vW-VX-wtb" secondAttribute="trailing" id="6Ix-Cc-mKV"/>
+                <constraint firstItem="2vW-VX-wtb" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="JDL-q2-Oyf"/>
+                <constraint firstItem="2vW-VX-wtb" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="Kda-Kq-VST"/>
+                <constraint firstItem="2vW-VX-wtb" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Og7-AV-DdL"/>
+                <constraint firstItem="2vW-VX-wtb" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="SJM-gl-168"/>
+                <constraint firstItem="2vW-VX-wtb" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="SiK-qy-SIH"/>
+                <constraint firstItem="2vW-VX-wtb" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="cMF-G3-iXi"/>
+                <constraint firstItem="2vW-VX-wtb" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="mHP-Pv-gFH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

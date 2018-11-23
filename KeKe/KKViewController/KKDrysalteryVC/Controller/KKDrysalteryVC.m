@@ -17,6 +17,7 @@
 #import "KKDryCell.h"
 #import "KKDetailViewController.h"
 #import "KKMysekfMainViewController.h"
+#import "KKMusicViewController.h"
 
 //蓝牙开发必须遵守的代理
 @interface KKDrysalteryVC ()<CBCentralManagerDelegate,CBPeripheralDelegate,UITableViewDelegate,UITableViewDataSource>
@@ -53,7 +54,11 @@
     cell.ContentLabel.text=@"新碟间谍记得季度诶大结局爹间谍的呢的呢";
     return cell;
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    KKMusicViewController *vc=[[KKMusicViewController alloc] initWithNibName:@"KKMusicViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+    vc.title = @"歌单";
+}
 //建立一个Central Manager实例进行蓝牙管理
 -(CBCentralManager *)CBger{
     if (!_cBManger) {
