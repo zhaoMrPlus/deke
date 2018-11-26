@@ -10,6 +10,7 @@
 #import "UIColor+Factory.h"
 #import "UIViewController+YCCommon.h"
 #import "KKPushDetailViewController.h"
+#import "KKCarViewController.h"
 
 @interface KKviewVC ()
 @end
@@ -49,6 +50,9 @@
 }
 -(void)backBarButtonPressed:(id)sender{
     NSLog(@"click left");
+    KKCarViewController *vc=[[KKCarViewController alloc] initWithNibName:@"KKCarViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+    vc.title = @"好车买买买";
 }
 
 /*

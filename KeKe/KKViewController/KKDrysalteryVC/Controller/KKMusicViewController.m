@@ -8,6 +8,8 @@
 
 #import "KKMusicViewController.h"
 #import "KKMusicCollectionViewCell.h"
+#import "KKCollectDetailViewController.h"
+
 static NSString * headViewIdentifier=@"headView";
 static NSString * identifiyId=@"cell";
 
@@ -117,6 +119,10 @@ static NSString * identifiyId=@"cell";
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
    
     NSLog(@"---------------------");
+    KKCollectDetailViewController *vc=[[KKCollectDetailViewController alloc] initWithNibName:@"KKCollectDetailViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+    vc.hidesBottomBarWhenPushed = YES;
+    self.hidesBottomBarWhenPushed = NO;
     
 }
 #pragma mark 设置CollectionViewCell是否可以被点击

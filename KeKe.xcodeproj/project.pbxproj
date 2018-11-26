@@ -44,6 +44,10 @@
 		6C37B23F1FD5735000EA4AD7 /* KKUploadHeadActView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C37B23E1FD5735000EA4AD7 /* KKUploadHeadActView.m */; };
 		6C37B2441FD697BB00EA4AD7 /* KKLikeFoodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C37B2431FD697BB00EA4AD7 /* KKLikeFoodVC.m */; };
 		6C37B2471FD697CE00EA4AD7 /* KKSportVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C37B2461FD697CE00EA4AD7 /* KKSportVC.m */; };
+		6C3C055F21ABBBA100ABCF00 /* KKCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3C055D21ABBBA100ABCF00 /* KKCarViewController.m */; };
+		6C3C056021ABBBA100ABCF00 /* KKCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C3C055E21ABBBA100ABCF00 /* KKCarViewController.xib */; };
+		6C3C056421ABBC9500ABCF00 /* KKCarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3C056221ABBC9500ABCF00 /* KKCarTableViewCell.m */; };
+		6C3C056521ABBC9500ABCF00 /* KKCarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C3C056321ABBC9500ABCF00 /* KKCarTableViewCell.xib */; };
 		6C56901F1FC59874001D897C /* KKCharactrtTagsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C56901E1FC59874001D897C /* KKCharactrtTagsVC.m */; };
 		6C5690221FC59D78001D897C /* KKTagsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5690211FC59D78001D897C /* KKTagsView.m */; };
 		6C5690251FC5A5B5001D897C /* KKTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5690241FC5A5B5001D897C /* KKTipsView.m */; };
@@ -61,6 +65,10 @@
 		6C8DC50F21A6B26A003127CA /* KKJinPinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8DC50D21A6B26A003127CA /* KKJinPinTableViewCell.xib */; };
 		6C8DC51321A795AC003127CA /* KKJinPinDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8DC51121A795AC003127CA /* KKJinPinDetailViewController.m */; };
 		6C8DC51421A795AC003127CA /* KKJinPinDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8DC51221A795AC003127CA /* KKJinPinDetailViewController.xib */; };
+		6C8DC51821A7E340003127CA /* KKCollectDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8DC51621A7E340003127CA /* KKCollectDetailViewController.m */; };
+		6C8DC51921A7E340003127CA /* KKCollectDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8DC51721A7E340003127CA /* KKCollectDetailViewController.xib */; };
+		6C8DC51D21A7E4BC003127CA /* KKCollectDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8DC51B21A7E4BC003127CA /* KKCollectDetailCell.m */; };
+		6C8DC51E21A7E4BC003127CA /* KKCollectDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C8DC51C21A7E4BC003127CA /* KKCollectDetailCell.xib */; };
 		6C93A8F52199258C004C426A /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93A84521992588004C426A /* TZImageCropManager.m */; };
 		6C93A8F62199258C004C426A /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93A84721992588004C426A /* TZAssetCell.m */; };
 		6C93A8F72199258C004C426A /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C93A84821992588004C426A /* TZVideoPlayerController.m */; };
@@ -305,6 +313,12 @@
 		6C37B2431FD697BB00EA4AD7 /* KKLikeFoodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLikeFoodVC.m; sourceTree = "<group>"; };
 		6C37B2451FD697CE00EA4AD7 /* KKSportVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSportVC.h; sourceTree = "<group>"; };
 		6C37B2461FD697CE00EA4AD7 /* KKSportVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKSportVC.m; sourceTree = "<group>"; };
+		6C3C055C21ABBBA100ABCF00 /* KKCarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKCarViewController.h; sourceTree = "<group>"; };
+		6C3C055D21ABBBA100ABCF00 /* KKCarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKCarViewController.m; sourceTree = "<group>"; };
+		6C3C055E21ABBBA100ABCF00 /* KKCarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKCarViewController.xib; sourceTree = "<group>"; };
+		6C3C056121ABBC9500ABCF00 /* KKCarTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKCarTableViewCell.h; sourceTree = "<group>"; };
+		6C3C056221ABBC9500ABCF00 /* KKCarTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKCarTableViewCell.m; sourceTree = "<group>"; };
+		6C3C056321ABBC9500ABCF00 /* KKCarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKCarTableViewCell.xib; sourceTree = "<group>"; };
 		6C56901D1FC59874001D897C /* KKCharactrtTagsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCharactrtTagsVC.h; sourceTree = "<group>"; };
 		6C56901E1FC59874001D897C /* KKCharactrtTagsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCharactrtTagsVC.m; sourceTree = "<group>"; };
 		6C5690201FC59D78001D897C /* KKTagsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKTagsView.h; sourceTree = "<group>"; };
@@ -332,6 +346,12 @@
 		6C8DC51021A795AC003127CA /* KKJinPinDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKJinPinDetailViewController.h; sourceTree = "<group>"; };
 		6C8DC51121A795AC003127CA /* KKJinPinDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKJinPinDetailViewController.m; sourceTree = "<group>"; };
 		6C8DC51221A795AC003127CA /* KKJinPinDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKJinPinDetailViewController.xib; sourceTree = "<group>"; };
+		6C8DC51521A7E340003127CA /* KKCollectDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKCollectDetailViewController.h; sourceTree = "<group>"; };
+		6C8DC51621A7E340003127CA /* KKCollectDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKCollectDetailViewController.m; sourceTree = "<group>"; };
+		6C8DC51721A7E340003127CA /* KKCollectDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKCollectDetailViewController.xib; sourceTree = "<group>"; };
+		6C8DC51A21A7E4BC003127CA /* KKCollectDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKCollectDetailCell.h; sourceTree = "<group>"; };
+		6C8DC51B21A7E4BC003127CA /* KKCollectDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKCollectDetailCell.m; sourceTree = "<group>"; };
+		6C8DC51C21A7E4BC003127CA /* KKCollectDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKCollectDetailCell.xib; sourceTree = "<group>"; };
 		6C93A84321992588004C426A /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
 		6C93A84421992588004C426A /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
 		6C93A84521992588004C426A /* TZImageCropManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageCropManager.m; sourceTree = "<group>"; };
@@ -1589,6 +1609,9 @@
 				6C8DC50621A6B1BC003127CA /* KKJinPinViewController.h */,
 				6C8DC50721A6B1BC003127CA /* KKJinPinViewController.m */,
 				6C8DC50821A6B1BC003127CA /* KKJinPinViewController.xib */,
+				6C8DC51521A7E340003127CA /* KKCollectDetailViewController.h */,
+				6C8DC51621A7E340003127CA /* KKCollectDetailViewController.m */,
+				6C8DC51721A7E340003127CA /* KKCollectDetailViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1618,6 +1641,9 @@
 				6C8DC50B21A6B26A003127CA /* KKJinPinTableViewCell.h */,
 				6C8DC50C21A6B26A003127CA /* KKJinPinTableViewCell.m */,
 				6C8DC50D21A6B26A003127CA /* KKJinPinTableViewCell.xib */,
+				6C8DC51A21A7E4BC003127CA /* KKCollectDetailCell.h */,
+				6C8DC51B21A7E4BC003127CA /* KKCollectDetailCell.m */,
+				6C8DC51C21A7E4BC003127CA /* KKCollectDetailCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1646,6 +1672,9 @@
 		6CDED5361FAB248D00021F53 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6C3C056121ABBC9500ABCF00 /* KKCarTableViewCell.h */,
+				6C3C056221ABBC9500ABCF00 /* KKCarTableViewCell.m */,
+				6C3C056321ABBC9500ABCF00 /* KKCarTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1743,6 +1772,9 @@
 				6C8DC4F221A5465E003127CA /* KKPushDetailViewController.h */,
 				6C8DC4F321A5465E003127CA /* KKPushDetailViewController.m */,
 				6C8DC4F421A5465E003127CA /* KKPushDetailViewController.xib */,
+				6C3C055C21ABBBA100ABCF00 /* KKCarViewController.h */,
+				6C3C055D21ABBBA100ABCF00 /* KKCarViewController.m */,
+				6C3C055E21ABBBA100ABCF00 /* KKCarViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1878,6 +1910,7 @@
 				6C9FE66B1FCD880E006A0336 /* Poseidon.bundle in Resources */,
 				6CD2C12A1FD151C30035EB2E /* WechatShortVideo_37x-Checkmark.png in Resources */,
 				6CD2C12E1FD151C30035EB2E /* WechatShortVideo_close@3x.png in Resources */,
+				6C8DC51921A7E340003127CA /* KKCollectDetailViewController.xib in Resources */,
 				6CD2C1301FD151C30035EB2E /* WechatShortVideo_scan_focus@2x.png in Resources */,
 				6C8DC50521A68E98003127CA /* KKMusicCollectionViewCell.xib in Resources */,
 				6CD118161FC40A1700D7C58C /* AlipaySDK.bundle in Resources */,
@@ -1886,6 +1919,7 @@
 				6C03856221A25DC300F9C4FA /* KKDetailViewController.xib in Resources */,
 				6CDED4FE1FAB1EB300021F53 /* Main.storyboard in Resources */,
 				6C8DC50A21A6B1BC003127CA /* KKJinPinViewController.xib in Resources */,
+				6C8DC51E21A7E4BC003127CA /* KKCollectDetailCell.xib in Resources */,
 				6C261EB320187C0200AA9691 /* close_btn@2x.png in Resources */,
 				6C03857421A3B35100F9C4FA /* KKdetailInfoTableViewCell.xib in Resources */,
 				6CD2C0A91FD040950035EB2E /* Place.plist in Resources */,
@@ -1899,7 +1933,9 @@
 				6C9FE66A1FCD880E006A0336 /* H5Service.bundle in Resources */,
 				6C8DC4FB21A67D3B003127CA /* KKRebuildLoginViewController.xib in Resources */,
 				6C03856721A2A40A00F9C4FA /* KKDetailTableViewCell.xib in Resources */,
+				6C3C056021ABBBA100ABCF00 /* KKCarViewController.xib in Resources */,
 				6C2F053F219D090400F275C5 /* KKDrysalteryVC.xib in Resources */,
+				6C3C056521ABBC9500ABCF00 /* KKCarTableViewCell.xib in Resources */,
 				6C93A8FC2199258C004C426A /* TZImagePickerController.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1960,6 +1996,7 @@
 				6CDED5931FAB293600021F53 /* UIAlertView+AFNetworking.m in Sources */,
 				6CD1179A1FC3E5A300D7C58C /* KKMoneySelectView.m in Sources */,
 				6C37B2471FD697CE00EA4AD7 /* KKSportVC.m in Sources */,
+				6C8DC51821A7E340003127CA /* KKCollectDetailViewController.m in Sources */,
 				6C93A9022199258C004C426A /* TZLocationManager.m in Sources */,
 				6C37B22C1FD54F8000EA4AD7 /* AdaptUIView.m in Sources */,
 				6CDED6091FAB433A00021F53 /* ZHBHttpTool.m in Sources */,
@@ -1986,6 +2023,7 @@
 				6C93A8F82199258C004C426A /* TZAssetModel.m in Sources */,
 				6C8DC4FA21A67D3B003127CA /* KKRebuildLoginViewController.m in Sources */,
 				6CDED4FB1FAB1EB300021F53 /* ViewController.m in Sources */,
+				6C3C056421ABBC9500ABCF00 /* KKCarTableViewCell.m in Sources */,
 				6CD2C0FB1FD151B70035EB2E /* SCAssetExportSession.m in Sources */,
 				6CD2C1121FD151B70035EB2E /* SCSwipeableFilterView.m in Sources */,
 				6CDED5961FAB293600021F53 /* UIProgressView+AFNetworking.m in Sources */,
@@ -2005,6 +2043,7 @@
 				6C32066021A403BC0042DCE2 /* WZZBaseButton.m in Sources */,
 				6CD1179F1FC3E5A300D7C58C /* KKSettingVC.m in Sources */,
 				6CDED5A41FAB2AAC00021F53 /* KKFindVC.m in Sources */,
+				6C3C055F21ABBBA100ABCF00 /* KKCarViewController.m in Sources */,
 				6CD2C10B1FD151B70035EB2E /* SCRecorderFocusTargetView.m in Sources */,
 				6CD117A91FC3E5EA00D7C58C /* KKuserTextfield.m in Sources */,
 				6CDED5521FAB27DD00021F53 /* NSDictionary+SafeData.m in Sources */,
@@ -2057,6 +2096,7 @@
 				6CD2C0FD1FD151B70035EB2E /* SCAudioTools.m in Sources */,
 				6C93A8FA2199258C004C426A /* UIView+Layout.m in Sources */,
 				6CDED5981FAB293600021F53 /* UIWebView+AFNetworking.m in Sources */,
+				6C8DC51D21A7E4BC003127CA /* KKCollectDetailCell.m in Sources */,
 				6CD2C10C1FD151B70035EB2E /* SCRecorderTools.m in Sources */,
 				6C37B23A1FD54FA100EA4AD7 /* UIResponder+UIAdapt.m in Sources */,
 				6C32066221A403BC0042DCE2 /* WZZBaseLabel.m in Sources */,
