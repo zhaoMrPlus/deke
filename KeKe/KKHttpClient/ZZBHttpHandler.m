@@ -25,12 +25,6 @@ static NSString *kWZBaseUrl = @"http://api.expoon.com/";
 static NSString *kWZBaseUrl = @"http://api.expoon.com/";
 #endif
 
-#if ISRELEASEURL_USER
-static NSString *kWZBaseUrl_user = @"http://user.xiaoxinchat.com/v1/";
-#else
-static NSString *kWZBaseUrl_user = @"http://114.215.147.43:8001/v1/";
-#endif
-
 @implementation ZZBHttpHandler
 
 /**
@@ -41,7 +35,7 @@ static NSString *kWZBaseUrl_user = @"http://114.215.147.43:8001/v1/";
                   successBlock:(void(^)(id resp))sb
                    failedBlock:(void(^)(NSError * err))fb{
 
-    [self POST7:[kWZBaseUrl stringByAppendingString:@"AppExpoon/getYuGaoBanner"]
+    [self POST7:[kWZBaseUrl stringByAppendingString:@"AppExpoon/getBoothRecommendList/limit/8"]
    requiredArgs:nil
       otherArgs:nil successBlock:^(id resp) {
           if (sb) {//成功返回
@@ -59,7 +53,22 @@ static NSString *kWZBaseUrl_user = @"http://114.215.147.43:8001/v1/";
 }
 
 
++(void)loadTestDataId:(NSString *)testId successBlock:(void (^)(id))sb failedBlock:(void (^)(NSError *))fb{
+    [self POST7:[kWZBaseUrl stringByAppendingString:@"AppExpoon/getBolanhuiList"]
+   requiredArgs:nil
+      otherArgs:nil successBlock:^(id resp) {
+          if (sb) {//成功返回
+              sb(resp);
+          }
+          //根据自己的需求格式化          
+      } failedBlock:^(NSError *err) {
+          if (fb) {//失败返回
+              sb(err);
+          }
+          
+      }];
 
+}
 
 
 

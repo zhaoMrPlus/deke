@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KKCollectModel.h"
 
 @interface KKMusicCollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -14,4 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *AccountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *NameLabel;
 
+@property (nonatomic,strong)  KKCollectModel *infoModel;
+-(void)setFileInfo:(KKCollectModel *)model;
 @end

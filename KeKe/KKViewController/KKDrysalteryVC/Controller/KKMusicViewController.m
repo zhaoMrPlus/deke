@@ -9,6 +9,8 @@
 #import "KKMusicViewController.h"
 #import "KKMusicCollectionViewCell.h"
 #import "KKCollectDetailViewController.h"
+#import "KKCollectModel.h"
+#import "KKWebviewViewController.h"
 
 static NSString * headViewIdentifier=@"headView";
 static NSString * identifiyId=@"cell";
@@ -22,9 +24,10 @@ static NSString * identifiyId=@"cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _dataArray =[NSMutableArray arrayWithObjects:@"世界上最璀璨的烟火，即是你的粲然一笑",@"45度仰望星空，这些歌会让你打开回忆",@"我可以一辈子注视你，你就像我最爱的电影",@"飘渺深邃，空灵之境",@"世界上很好听的纯音乐",@"【白噪声】写论文必备",@"纯音乐的殿堂，震撼你的心灵",@"学习用【安静的音乐】",@"最丧也最甜美",@"开口即俘获人心",@"世界上最好听的钢琴曲",@"无前奏英文歌精选", nil];
-    _NameDataArray =[NSMutableArray arrayWithObjects:@"45度仰望星空",@"钢琴曲",@"爱的电影",@"空灵之境",@"纯音乐",@"【白噪声】",@"震撼你的心灵",@"【安静的音乐】",@"最甜美",@"俘获人心",@"世界",@"英文歌精选", nil];
-
+    _dataArray=[NSMutableArray new];
+//    _dataArray =[NSMutableArray arrayWithObjects:@"世界上最璀璨的烟火，即是你的粲然一笑",@"45度仰望星空，这些歌会让你打开回忆",@"我可以一辈子注视你，你就像我最爱的电影",@"飘渺深邃，空灵之境",@"世界上很好听的纯音乐",@"【白噪声】写论文必备",@"纯音乐的殿堂，震撼你的心灵",@"学习用【安静的音乐】",@"最丧也最甜美",@"开口即俘获人心",@"世界上最好听的钢琴曲",@"无前奏英文歌精选", nil];
+//    _NameDataArray =[NSMutableArray arrayWithObjects:@"45度仰望星空",@"钢琴曲",@"爱的电影",@"空灵之境",@"纯音乐",@"【白噪声】",@"震撼你的心灵",@"【安静的音乐】",@"最甜美",@"俘获人心",@"世界",@"英文歌精选", nil];
+    [self getData];
     [self showBackButtonWithImage:@"icon_back"];
     UICollectionViewFlowLayout *flayOut=[[UICollectionViewFlowLayout alloc] init];
     flayOut.scrollDirection = UICollectionViewScrollDirectionVertical;
@@ -37,6 +40,17 @@ static NSString * identifiyId=@"cell";
     
     
 }
+-(void)getData{
+    [ZZBHttpHandler loadTestInfoWithTestId:@"" successBlock:^(id resp) {
+        for (NSDictionary *temp in resp[@"data"]) {
+            KKCollectModel * model=[KKCollectModel initWithModel:temp];
+            [_dataArray addObject:model];
+        }
+        [_CollectionView reloadData];
+    } failedBlock:^(NSError *err) {
+        
+    }];
+}
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return 1;
 }
@@ -47,9 +61,10 @@ static NSString * identifiyId=@"cell";
     KKMusicCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifiyId forIndexPath:indexPath];
     cell.backgroundColor=[UIColor whiteColor];
     cell.ImageView.backgroundColor=randomColor;
-    cell.titleLabel.text = _dataArray[indexPath.row];
-    cell.AccountLabel.text=[NSString stringWithFormat:@"%zd万",10+indexPath.row];
-    cell.NameLabel.text =_NameDataArray[indexPath.row];
+//    cell.titleLabel.text = _dataArray[indexPath.row];
+//    cell.AccountLabel.text=[NSString stringWithFormat:@"%zd万",10+indexPath.row];
+//    cell.NameLabel.text =_NameDataArray[indexPath.row];
+    [cell setFileInfo:_dataArray[indexPath.row]];
     return cell;
     
 }
@@ -119,11 +134,17 @@ static NSString * identifiyId=@"cell";
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
    
     NSLog(@"---------------------");
-    KKCollectDetailViewController *vc=[[KKCollectDetailViewController alloc] initWithNibName:@"KKCollectDetailViewController" bundle:nil];
+//    KKCollectDetailViewController *vc=[[KKCollectDetailViewController alloc] initWithNibName:@"KKCollectDetailViewController" bundle:nil];
+//    [self.navigationController pushViewController:vc animated:YES];
+//    vc.hidesBottomBarWhenPushed = YES;
+//    self.hidesBottomBarWhenPushed = NO;
+//
+    KKCollectModel * model= _dataArray[indexPath.row];
+    KKWebviewViewController *vc=[[KKWebviewViewController alloc] initWithNibName:@"KKWebviewViewController" bundle:nil];
     [self.navigationController pushViewController:vc animated:YES];
     vc.hidesBottomBarWhenPushed = YES;
     self.hidesBottomBarWhenPushed = NO;
-    
+    vc.pathUrl = model.url;
 }
 #pragma mark 设置CollectionViewCell是否可以被点击
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath
@@ -131,5 +152,4 @@ static NSString * identifiyId=@"cell";
     return YES;
     
 }
-
 @end

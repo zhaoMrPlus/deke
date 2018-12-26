@@ -25,7 +25,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self showBackButtonWithImage:@"icon_back"];
     _gonggaoLabel.layer.borderColor=[UIColor redColor].CGColor;
     _gonggaoLabel.layer.borderWidth= 0.5;
@@ -41,7 +40,7 @@
     _V2.layer.cornerRadius = 3;
     _V1.backgroundColor=[UIColor whiteColor];
     _V2.backgroundColor=[UIColor whiteColor];
-
+    
     for (int a=0 ;a< 4; a++) {
         UIImageView * img=[[UIImageView alloc] initWithFrame:CGRectMake(10 + a * 270, 10,240 , _ScrollViewBgView.height-20)];
         [_ScrollViewBgView addSubview:img];

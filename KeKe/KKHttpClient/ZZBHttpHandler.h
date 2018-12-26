@@ -20,5 +20,8 @@
                   successBlock:(void(^)(id resp))sb
                    failedBlock:(void(^)(NSError * err))fb;
 
++ (void)loadTestDataId:(NSString *)testId
+                  successBlock:(void(^)(id resp))sb
+                   failedBlock:(void(^)(NSError * err))fb;
 
 @end

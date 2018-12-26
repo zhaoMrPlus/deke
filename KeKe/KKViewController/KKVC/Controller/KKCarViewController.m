@@ -8,6 +8,7 @@
 
 #import "KKCarViewController.h"
 #import "KKCarTableViewCell.h"
+#import "KKCarDetailViewController.h"
 
 @interface KKCarViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *myTableview;
@@ -36,33 +37,33 @@
     [self showBackButtonWithImage:@"icon_back"];
     _middleView.backgroundColor=[UIColor mainGrayColor];
     _middleLine.backgroundColor=[UIColor mainGrayColor];
-    
-    
-    [_myTableview registerNib:[UINib nibWithNibName:@"KKCarTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
-
-    // Do any additional setup after loading the view from its nib.
+    [_myTableview registerNib:[UINib nibWithNibName:@"KKCarTableViewCell"
+                                             bundle:nil]
+       forCellReuseIdentifier:@"cell"];
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 11;
+    return 20;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     KKCarTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"cell"];
-    
     cell.CELLV.backgroundColor=randomColor;
     cell.BottomL.layer.borderColor=randomColor.CGColor;
     cell.BottomL.layer.borderWidth = .6;
     cell.BottomL.layer.cornerRadius = 2;
     
-    
     return  cell;
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    KKCarDetailViewController *vc=[[KKCarDetailViewController alloc] initWithNibName:@"KKCarDetailViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
 -(void)backBarButtonPressed:(id)sender{
-    [self.navigationController popViewControllerAnimated:YES];    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
